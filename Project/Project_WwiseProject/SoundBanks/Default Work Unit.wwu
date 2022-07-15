@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{071B7A03-EA2C-478D-A736-FC29B037E247}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{071B7A03-EA2C-478D-A736-FC29B037E247}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{071B7A03-EA2C-478D-A736-FC29B037E247}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Master" ID="{F1D170EE-1311-407E-9CFE-52F3CE710DA4}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Dice_roll" ID="{FA83F492-07B6-4B90-ACB3-FD0FAF1DA43B}" WorkUnitID="{FF3B9434-30BC-4250-A78C-BF4B6DA44856}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

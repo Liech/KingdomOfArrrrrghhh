@@ -11,17 +11,28 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="297372918">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="948063781">
+		<SoundBank Id="4056684167" Language="SFX" Hash="3201731810">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1464619614" Name="Dice_roll" ObjectPath="\Events\Default Work Unit\Dice\Dice_roll" DurationType="OneShot" DurationMin="1." DurationMax="1."/>
+				<Event Id="1464619614" Name="Dice_roll" ObjectPath="\Events\Default Work Unit\Dice\Dice_roll" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.100191" DurationMax="0.213156">
+					<IncludedMemoryFiles>
+						<File Id="340920121" Language="SFX">
+							<ShortName>FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS.wav</ShortName>
+							<Path>SFX/FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_5A7A4554.wem</Path>
+						</File>
+						<File Id="672918623" Language="SFX">
+							<ShortName>FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS.wav</ShortName>
+							<Path>SFX/FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

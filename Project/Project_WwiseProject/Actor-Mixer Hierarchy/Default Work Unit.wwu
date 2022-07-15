@@ -1,6 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A9337369-B3F7-4367-919A-6094D8D099C5}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{A9337369-B3F7-4367-919A-6094D8D099C5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A9337369-B3F7-4367-919A-6094D8D099C5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Dice" ID="{4DA68B46-D127-4D91-8664-7DEF89FBB64C}" ShortID="182744136">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Dice_Sequence" ID="{DECF8813-D983-4E34-AC8C-F3277C495257}" ShortID="922010034">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{18366C55-97CB-46ED-94A1-A3C8BEE4B347}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="404"/>
+													<Property Name="Min" Type="Real64" Value="-354"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{DE9DEAF5-2661-49C1-B202-CCA4DF8C8D05}" ShortID="1054154447">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{021B8985-A975-46AD-A8A1-CB14C6FABA6A}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A55BEFD7-049E-4BF3-8778-F4657D738735}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{47AC3D9D-FA62-4063-BF28-AE2202C5A974}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Dice_ Roll" ID="{6ED0F2B8-6DAE-411C-B558-7C3D435B1A97}" ShortID="569264325">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{862810E5-36B0-4EC9-ADD8-6554A76E45F8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="170"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A55BEFD7-049E-4BF3-8778-F4657D738735}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{47AC3D9D-FA62-4063-BF28-AE2202C5A974}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS" ID="{77BF8853-A4BE-4F84-A630-FC7162E8CFC3}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.169355567738791"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.308934332358674"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="340920121"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS" ID="{77BF8853-A4BE-4F84-A630-FC7162E8CFC3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dice_ Roll_01" ID="{8CCCF4B1-93AD-4C58-95F4-DC1885D3E6B1}" ShortID="81174276">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3274B77C-9D15-49C3-B624-2E0E8AF7B08D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-379"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A55BEFD7-049E-4BF3-8778-F4657D738735}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{47AC3D9D-FA62-4063-BF28-AE2202C5A974}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS" ID="{5CA8EB75-8905-411B-84C4-1BBAEEF3274E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.169355567738791"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.308934332358674"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="340920121"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS" ID="{5CA8EB75-8905-411B-84C4-1BBAEEF3274E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dice_ Roll_02" ID="{3C386984-D73F-48FA-B46F-3AEB3DB8420B}" ShortID="950299746">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AC3F8C0F-D789-4DD0-9C4E-05F0FE1383B7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-429"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A55BEFD7-049E-4BF3-8778-F4657D738735}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{47AC3D9D-FA62-4063-BF28-AE2202C5A974}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS" ID="{0E33B833-7755-4619-8DDF-D609C05D0F50}">
+											<Language>SFX</Language>
+											<AudioFile>FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="672918623"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS" ID="{0E33B833-7755-4619-8DDF-D609C05D0F50}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="Dice_ Roll" ID="{6ED0F2B8-6DAE-411C-B558-7C3D435B1A97}"/>
+								<ItemRef Name="Dice_ Roll_01" ID="{8CCCF4B1-93AD-4C58-95F4-DC1885D3E6B1}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

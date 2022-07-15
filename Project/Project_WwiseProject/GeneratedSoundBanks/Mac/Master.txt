@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1464619614	Dice_roll			\Default Work Unit\Dice\Dice_roll	
 
-Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	988343496	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_ Roll\Wwise Tone Generator	
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	340920121	Dice_ Roll	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Mac\SFX\FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_5A7A4554.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_Sequence\Dice_ Roll		2259
+	672918623	Dice_ Roll_02	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Mac\SFX\FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_Sequence\Dice_ Roll_02		13609
 

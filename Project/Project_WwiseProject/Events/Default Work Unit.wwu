@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FF3B9434-30BC-4250-A78C-BF4B6DA44856}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{FF3B9434-30BC-4250-A78C-BF4B6DA44856}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FF3B9434-30BC-4250-A78C-BF4B6DA44856}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Dice" ID="{13783868-B6A8-440B-9872-6C7C9C425FE2}" ShortID="221793933">
+					<ChildrenList>
+						<Event Name="Dice_roll" ID="{FA83F492-07B6-4B90-ACB3-FD0FAF1DA43B}">
+							<ChildrenList>
+								<Action Name="" ID="{BB648D7E-47F2-4439-81BC-8C3B2793907B}" ShortID="188038058">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dice_Sequence" ID="{DECF8813-D983-4E34-AC8C-F3277C495257}" WorkUnitID="{A9337369-B3F7-4367-919A-6094D8D099C5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

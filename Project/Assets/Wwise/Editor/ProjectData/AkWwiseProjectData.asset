@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: 14f3b83038bc9240a07791571779e334
     GuidInternal: 
-    m_lastTime: -8585436899364203268
+    m_lastTime: -8585436893889568823
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 9d3dac4762fa6340bf28ae2202c5a974
     GuidInternal: 
-    m_lastTime: -8585436899364251539
+    m_lastTime: -8585436893890070080
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 037a1b072cea8d47a736fc29b037e247
     GuidInternal: 
-    m_lastTime: -8585436899364209140
-    List: []
+    m_lastTime: -8585436868284039556
+    List:
+    - name: Master
+      guid: ee70d1f111137e409cfe52f3ce710da4
+      id: 4056684167
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 037a1b072cea8d47a736fc29b037e247
+      - ElementName: Master
+        ObjectType: 7
+        guid: ee70d1f111137e409cfe52f3ce710da4
+      Path: SoundBanks/Default Work Unit/Master
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,45 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 34943bffbc305042a78cbf4b6da44856
     GuidInternal: 
-    m_lastTime: -8585436899364254258
-    List: []
+    m_lastTime: -8585436859583834705
+    List:
+    - name: Dice
+      guid: 68387813a8b60b4498726c7c9c425fe2
+      id: 2480856068
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 34943bffbc305042a78cbf4b6da44856
+      - ElementName: Dice
+        ObjectType: 4
+        guid: 68387813a8b60b4498726c7c9c425fe2
+      Path: Events/Default Work Unit/Dice
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Dice_roll
+      guid: 92f483fab607904bacb3fd0faf1da43b
+      id: 1464619614
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 34943bffbc305042a78cbf4b6da44856
+      - ElementName: Dice
+        ObjectType: 4
+        guid: 68387813a8b60b4498726c7c9c425fe2
+      - ElementName: Dice_roll
+        ObjectType: 3
+        guid: 92f483fab607904bacb3fd0faf1da43b
+      Path: Events/Default Work Unit/Dice/Dice_roll
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +145,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 26b5785a58e42c46a614a7df7c404cbb
     GuidInternal: 
-    m_lastTime: -8585436899364253011
+    m_lastTime: -8585436893890071943
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
@@ -108,7 +159,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: a7abbe0d281fef4897b5496226287cbb
     GuidInternal: 
-    m_lastTime: -8585436899363763920
+    m_lastTime: -8585436893889698973
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
@@ -122,7 +173,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: 77dfd145e13a2d4282842452d26c2aab
     GuidInternal: 
-    m_lastTime: -8585436899364205549
+    m_lastTime: -8585436893889698454
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
@@ -136,7 +187,7 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: 4511fe3ba3a5234c8b2d8a5b2372a490
     GuidInternal: 
-    m_lastTime: -8585436899364204385
+    m_lastTime: -8585436893889697834
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 050000000600000007000000090000000a000000

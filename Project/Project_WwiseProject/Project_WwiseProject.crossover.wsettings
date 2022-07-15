@@ -3,6 +3,8 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{A485A21E-D0E8-4861-A467-EF43A16FD7E6}">
 			<PropertyList>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\"/>
+				<Property Name="Event Action List\{FA83F492-07B6-4B90-ACB3-FD0FAF1DA43B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
