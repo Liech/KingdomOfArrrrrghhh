@@ -19,7 +19,11 @@ PluginImporter:
   - first:
       Editor: Editor
     second:
+<<<<<<< HEAD
       enabled: 0
+=======
+      enabled: 1
+>>>>>>> AudioStuff2
       settings:
         DefaultValueInitialized: true
   - first:

@@ -27,6 +27,7 @@
 	<ValidationCacheItem File="Z:\Users\carlosberrizbeitia\Repos\GMTKJam2022\Project_WwiseIntegrationTemp\Project_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1657914361" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\carlosberrizbeitia\Repos\GMTKJam2022\Project_WwiseIntegrationTemp\Project_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1657914361" DateHigh="0"/>
 	<ValidationCacheItem File="Z:\Users\carlosberrizbeitia\Repos\GMTKJam2022\Project_WwiseIntegrationTemp\Project_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1657914361" DateHigh="0"/>
+<<<<<<< HEAD
 	<ValidationCacheItem File="Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1657914437" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1657914437" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1657914437" DateHigh="0"/>
@@ -54,4 +55,6 @@
 	<ValidationCacheItem File="Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1657914437" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1657914437" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1657914437" DateHigh="0"/>
+=======
+>>>>>>> AudioStuff2
 </ValidationCache>
