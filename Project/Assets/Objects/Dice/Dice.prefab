@@ -677,6 +677,8 @@ GameObject:
   - component: {fileID: 9003287616876615075}
   - component: {fileID: 4314662912205854809}
   - component: {fileID: 7249012668030670105}
+  - component: {fileID: 7740086616026499855}
+  - component: {fileID: 8075157361394019326}
   m_Layer: 0
   m_Name: Dice
   m_TagString: Untagged
@@ -777,7 +779,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2657171304852110574}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 5d895fb4afbfb0149b41100dca1446dc, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -799,6 +801,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7740086616026499855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2657171304852110574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6a97f368f4ab64ba3ad3202905a1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  momentumFactor: 2
+  maximumMomentum: 7
+  minimumHeight: 3
+--- !u!114 &8075157361394019326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2657171304852110574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38ea15edd3348d4eb650d8a55dabc92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerKey: 32
 --- !u!1 &3304270953785308842
 GameObject:
   m_ObjectHideFlags: 0
