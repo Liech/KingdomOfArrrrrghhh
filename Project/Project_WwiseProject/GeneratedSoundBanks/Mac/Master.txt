@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1464619614	Dice_roll			\Default Work Unit\Dice\Dice_roll	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	988343496	Wwise Tone Generator	Wwise Tone Generator		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_ Roll\Wwise Tone Generator	
+
