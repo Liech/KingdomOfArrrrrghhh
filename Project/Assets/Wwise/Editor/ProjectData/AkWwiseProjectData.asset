@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 037a1b072cea8d47a736fc29b037e247
     GuidInternal: 
-    m_lastTime: -8585436858398411625
+    m_lastTime: -8585436859237163753
     List:
     - name: Master
       guid: ee70d1f111137e409cfe52f3ce710da4
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 34943bffbc305042a78cbf4b6da44856
     GuidInternal: 
-    m_lastTime: -8585436858398990070
+    m_lastTime: -8585436859237172193
     List:
     - name: Dice
       guid: 68387813a8b60b4498726c7c9c425fe2
@@ -129,7 +129,7 @@ MonoBehaviour:
       - ElementName: Dice_roll
         ObjectType: 3
         guid: 92f483fab607904bacb3fd0faf1da43b
-      Path: Events\Default Work Unit\Dice\Dice_roll
+      Path: Events/Default Work Unit/Dice/Dice_roll
       maxAttenuation: 100
       maxDuration: 0.213156
       minDuration: 0.100191
