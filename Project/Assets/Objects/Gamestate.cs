@@ -29,7 +29,6 @@ public class Gamestate : MonoBehaviour
     
     void Start()
     {
-        
     }
 
     void Update()
