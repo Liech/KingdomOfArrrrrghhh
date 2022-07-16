@@ -125,7 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbba8f080736c40438825dbabffd875a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorTarget: {fileID: 695007236539518594}
+  colorTarget: {fileID: 0}
+  colorTarget2: {fileID: 7123400806981599586}
 --- !u!114 &8231664360726709748
 MonoBehaviour:
   m_ObjectHideFlags: 0
