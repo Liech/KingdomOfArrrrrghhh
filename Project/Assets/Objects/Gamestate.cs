@@ -58,10 +58,28 @@ public class Gamestate : MonoBehaviour
             if (Pathfinder.instance.getReachableTiles(currentUnit.gameObject, currentUnit.TravelDistance).Contains(tile)) {
                 Vector3 pos = board.GetComponent<Grid>().CellToWorld(tile) + new Vector3(0, 0.1f, 0);
                 currentUnit.transform.position = pos;
-                SelectedUnit.instance.setSelectedUnit(null);
-                setNextUnitToCurrent();
+
+                var units = Pathfinder.instance.getUnits(currentUnit.gameObject, currentUnit.attackRange);
+                if (units.Count != 0) {
+                    currentState = GamestateEnum.UnitAttack;
+                    DoNotAttackButton.instance.transform.GetChild(0).gameObject.SetActive(true);
+                }
+                else {
+                    SelectedUnit.instance.setSelectedUnit(null);
+                    setNextUnitToCurrent();
+                }
+
             }
         }
+    }
+
+    public void attackUnit(UnitInformation attackedUnit) {
+        if (attackedUnit == null) {
+            currentState = GamestateEnum.UnitMovement;
+            SelectedUnit.instance.setSelectedUnit(null);
+            setNextUnitToCurrent();
+        }
+        DoNotAttackButton.instance.transform.GetChild(0).gameObject.SetActive(false);
     }
 
     public bool currentUnitCanBeMoved() {

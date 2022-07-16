@@ -65,7 +65,26 @@ public class Pathfinder : MonoBehaviour {
         public int stepsTaken = 0;
     }
 
-    public HashSet<Vector3Int> getReachableTiles(GameObject unit, int walkingSpeed) {
+    public HashSet<UnitInformation> getUnits(GameObject unit, int distance) {
+        HexBoard board = HexBoard.instance();
+        var tiles = getReachableTiles(unit, distance, true);
+        HashSet<UnitInformation> result = new HashSet<UnitInformation>();
+        foreach(var t in tiles) {
+            RaycastHit hit;
+            Vector3 p1 = board.GetComponent<Grid>().CellToWorld(t) + new Vector3(0, sphereRadius + 0.2f, 0);
+            var objects = Physics.OverlapSphere(p1, sphereRadius);
+            foreach(var obj in objects) {
+                if (obj.attachedRigidbody != null) {
+                    var o = obj.attachedRigidbody.gameObject;
+                    if (o.GetComponent<UnitInformation>())
+                        result.Add(o.GetComponent<UnitInformation>());
+                }
+            }
+        }
+        return result;
+    }
+
+    public HashSet<Vector3Int> getReachableTiles(GameObject unit, int walkingSpeed, bool ignoreObstacles = false) {
         HexBoard board = HexBoard.instance();
         Vector3Int cellID = board.GetComponent<Grid>().WorldToCell(unit.transform.position);
         cellID.z = 0;
@@ -92,8 +111,10 @@ public class Pathfinder : MonoBehaviour {
                     continue;
                 visited.Add(step);
 
-                if (!isPassable(step, current.pos))
-                    continue;
+                if (!ignoreObstacles) {
+                    if (!isPassable(step, current.pos))
+                        continue;
+                }
                 if (current.stepsTaken >= walkingSpeed)
                     continue;
                 if (board.assetTiles.GetTile(step) == null)
