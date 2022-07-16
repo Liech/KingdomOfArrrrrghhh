@@ -15,6 +15,9 @@ namespace AK
     {
         static const AkUniqueID DICE_ROLL = 1464619614U;
         static const AkUniqueID MUSIC_START = 3725903807U;
+        static const AkUniqueID UNIT_ERROR = 3874500464U;
+        static const AkUniqueID UNIT_MOVE = 670754785U;
+        static const AkUniqueID UNIT_SELECT = 244160138U;
     } // namespace EVENTS
 
     namespace BANKS

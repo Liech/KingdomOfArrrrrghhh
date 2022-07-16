@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -455,6 +455,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Master
       objectReference: {fileID: 0}
+    - target: {fileID: 5974758541682280936, guid: 4c6639e62f5c34b9c938b0d9e744d1db,
+        type: 3}
+      propertyPath: UnitSelect.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974758541682280936, guid: 4c6639e62f5c34b9c938b0d9e744d1db,
+        type: 3}
+      propertyPath: Unit_Select.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9118002020159917313, guid: 4c6639e62f5c34b9c938b0d9e744d1db,
         type: 3}
       propertyPath: m_RootOrder
@@ -533,6 +543,7 @@ MonoBehaviour:
   sphereRadius: 0.4
   walkingDistance: 3
   possibleDir: {x: 0, y: 0, z: 0}
+  showReachable: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0

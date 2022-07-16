@@ -160,6 +160,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentUnit: {fileID: 0}
+  SelectUnit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b42463a3a038044c789dadf54c846f71,
+      type: 2}
 --- !u!114 &1077512351182310556
 MonoBehaviour:
   m_ObjectHideFlags: 0

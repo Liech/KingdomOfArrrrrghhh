@@ -1,9 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
+	244160138	Unit_Select			\Default Work Unit\Units\Unit_Select	
+	670754785	Unit_Move			\Default Work Unit\Units\Unit_Move	
 	1464619614	Dice_roll			\Default Work Unit\Dice\Dice_roll	
 	3725903807	music_start			\Default Work Unit\Music\music_start	
+	3874500464	Unit_Error			\Default Work Unit\Units\Unit_Error	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	340920121	Dice_ Roll	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Windows\SFX\FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_BE01294F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_Sequence\Dice_ Roll		2259
+	466394452	Unit_selection	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Windows\SFX\Select_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Units\Unit_selection		1951
+	594770932	Unit_move	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Windows\SFX\Move_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Units\Unit_move\Unit_move		2901
 	672918623	Dice_ Roll_02	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Windows\SFX\FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_Sequence\Dice_ Roll_02		13609
+	883261010	Unit_error	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Windows\SFX\Error_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Units\Unit_error		2856
 	1046005575	AMB	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Windows\SFX\AMB_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Container\Level\AMB		3677815
 

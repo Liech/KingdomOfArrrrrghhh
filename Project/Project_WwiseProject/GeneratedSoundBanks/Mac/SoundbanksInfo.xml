@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="1224613512">
+		<SoundBank Id="4056684167" Language="SFX" Hash="3033840835">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -38,6 +38,30 @@
 						<File Id="1046005575" Language="SFX">
 							<ShortName>AMB.wav</ShortName>
 							<Path>SFX/AMB_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3874500464" Name="Unit_Error" ObjectPath="\Events\Default Work Unit\Units\Unit_Error" DurationType="OneShot" DurationMin="0.230729" DurationMax="0.230729">
+					<IncludedMemoryFiles>
+						<File Id="883261010" Language="SFX">
+							<ShortName>Error.wav</ShortName>
+							<Path>SFX/Error_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="670754785" Name="Unit_Move" ObjectPath="\Events\Default Work Unit\Units\Unit_Move" DurationType="OneShot" DurationMin="0.268313" DurationMax="0.268313">
+					<IncludedMemoryFiles>
+						<File Id="594770932" Language="SFX">
+							<ShortName>Move.wav</ShortName>
+							<Path>SFX/Move_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="244160138" Name="Unit_Select" ObjectPath="\Events\Default Work Unit\Units\Unit_Select" DurationType="OneShot" DurationMin="0.164646" DurationMax="0.164646">
+					<IncludedMemoryFiles>
+						<File Id="466394452" Language="SFX">
+							<ShortName>Select.wav</ShortName>
+							<Path>SFX/Select_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
