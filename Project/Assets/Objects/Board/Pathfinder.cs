@@ -96,6 +96,8 @@ public class Pathfinder : MonoBehaviour {
                     continue;
                 if (current.stepsTaken >= walkingSpeed)
                     continue;
+                if (board.assetTiles.GetTile(step) == null)
+                    continue;
 
                 todoItem newStep = new todoItem();
                 newStep.pos = step;
@@ -122,7 +124,10 @@ public class Pathfinder : MonoBehaviour {
                     board.RangeIndicatorTilemap.SetTile(cellID + new Vector3Int(x, y, 0), null);
 
             foreach (var r in reachable)
-                board.RangeIndicatorTilemap.SetTile(r, board.rangeTile);
+                if (currentUnit.GetComponent<UnitInformation>() == Gamestate.instance.currentUnit && currentUnit.GetComponent<FactionMember>().FactionID == 0)
+                  board.RangeIndicatorTilemap.SetTile(r, board.rangeTile);
+                else
+                  board.RangeIndicatorTilemap.SetTile(r, board.notMyRangeTile);
         }
         else
             board.RangeIndicatorTilemap.ClearAllTiles();

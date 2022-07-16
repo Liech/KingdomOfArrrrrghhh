@@ -12,9 +12,13 @@ public class HexBoard : MonoBehaviour
 
     public Tilemap RangeIndicatorTilemap;
     public TileBase rangeTile;
+    public TileBase notMyRangeTile;
 
     public Tilemap OwnershipTilemap;
     public TileBase ownerTile;
+
+    public Tilemap HoverTilemap;
+    public TileBase hoverTile;
 
 
     private static HexBoard inst = null;
