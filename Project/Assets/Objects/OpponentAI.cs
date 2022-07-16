@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class OpponentAI : MonoBehaviour {
     public int diceResult = 6;
+    public int sightDistance = 20;
 
 
     bool actionActive = false;
@@ -29,6 +31,24 @@ public class OpponentAI : MonoBehaviour {
     IEnumerator moving() {
         yield return new WaitForSeconds(1f); //thinking
 
+        var unit = Gamestate.instance.currentUnit;
+        var inSight = Pathfinder.instance.getUnits(unit.gameObject, 20);
+        var inReach = Pathfinder.instance.getReachableTiles(unit.gameObject, unit.TravelDistance);
+
+        UnitInformation best = null;
+        float bestDistance = float.MaxValue;
+        foreach(var x in inSight) {
+            float currentDistance = (x.transform.position - unit.transform.position).magnitude;
+            if(currentDistance < bestDistance) {
+                bestDistance = currentDistance;
+                best = x;
+            }
+        }
+
+        if (best == null) {
+            var element = inReach.ElementAt(Random.Range(0,inReach.Count));
+            Gamestate.instance.moveUnitTo(element);
+        }
 
 
         actionActive = false;
