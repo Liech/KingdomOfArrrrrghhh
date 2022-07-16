@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="3201731810">
+		<SoundBank Id="4056684167" Language="SFX" Hash="1224613512">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -25,11 +25,19 @@
 					<IncludedMemoryFiles>
 						<File Id="340920121" Language="SFX">
 							<ShortName>FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS.wav</ShortName>
-							<Path>SFX/FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_5A7A4554.wem</Path>
+							<Path>SFX/FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_BE01294F.wem</Path>
 						</File>
 						<File Id="672918623" Language="SFX">
 							<ShortName>FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS.wav</ShortName>
 							<Path>SFX/FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3725903807" Name="music_start" ObjectPath="\Events\Default Work Unit\Music\music_start" DurationType="OneShot" DurationMin="241.740005" DurationMax="241.740005">
+					<IncludedMemoryFiles>
+						<File Id="1046005575" Language="SFX">
+							<ShortName>AMB.wav</ShortName>
+							<Path>SFX/AMB_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
