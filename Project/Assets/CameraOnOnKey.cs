@@ -13,9 +13,9 @@ public class CameraOnOnKey : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2"))
-            GetComponent<FreeFlyCamera>().enabled = true;
-        else
-            GetComponent<FreeFlyCamera>().enabled = false;
+        //if (Input.GetButtonDown("Fire2"))
+        //    GetComponent<FreeFlyCamera>(). = true;
+        //else
+        //    GetComponent<FreeFlyCamera>().enabled = false;
     }
 }

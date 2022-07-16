@@ -99,6 +99,9 @@ public class Gamestate : MonoBehaviour
     public void diceRoll(int number) {
         if (currentState != GamestateEnum.DiceRoll)
             return;
+        if (attackedUnit) {
+            attackedUnit.currentLife -= number;
+        }
         currentState = GamestateEnum.UnitMovement;
         SelectedUnit.instance.setSelectedUnit(null);
         setNextUnitToCurrent();
@@ -112,7 +115,7 @@ public class Gamestate : MonoBehaviour
         }
         else {
             currentState = GamestateEnum.DiceRoll;
-            attackedUnit = SelectedUnit.instance.currentUnit;
+            this.attackedUnit = SelectedUnit.instance.currentUnit;
         }
 
         foreach (var a in attackIndicators)
