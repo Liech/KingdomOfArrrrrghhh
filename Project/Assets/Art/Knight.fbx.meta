@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 2c25431816e16364fac6c8844b8cb17f
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: 8118099292890519272
+    second: Armature_Knight|Armature_HealerAction
+  - first:
+      74: 8427729580036464977
+    second: Armature_Knight|Armature_KnightAction
+  - first:
+      74: 5976285099778031630
+    second: Armature_Knight|Armature_MonkAction
+  - first:
+      74: 7608512835493463097
+    second: Armature_Knight|Armature_PeasantAction
+  - first:
+      74: -641241688356024942
+    second: Armature_Knight|BookAction
+  - first:
+      74: -6222992540632244263
+    second: Armature_Knight|BowAction
+  - first:
+      74: -1112027714433121855
+    second: Armature_Knight|CrcasaAction
+  - first:
+      74: 6208988512870275086
+    second: Armature_Knight|FlechaAction
+  - first:
+      74: 6264489784957274655
+    second: Armature_Knight|HealerAction
+  - first:
+      74: 8898686579620753295
+    second: Armature_Knight|knightAction
+  - first:
+      74: -3608514612982581758
+    second: Armature_Knight|monkAction
+  - first:
+      74: -7456656907729663456
+    second: Armature_Knight|peasentAction
+  - first:
+      74: -6888680660699132102
+    second: Armature_Knight|StaffAction
+  - first:
+      74: 7469436943237512909
+    second: Armature_Knight|SwordAction
+  - first:
+      74: -1446941347883961590
+    second: Sword_A|BookAction
+  - first:
+      74: 5124505666402392035
+    second: Sword_A|BowAction
+  - first:
+      74: -8896552596143489752
+    second: Sword_A|CrcasaAction
+  - first:
+      74: -2213770860170857812
+    second: Sword_A|FlechaAction
+  - first:
+      74: 7514294819135463229
+    second: Sword_A|HealerAction
+  - first:
+      74: 1137272066868293709
+    second: Sword_A|knightAction
+  - first:
+      74: -2923798594269270400
+    second: Sword_A|monkAction
+  - first:
+      74: 6920439666128812850
+    second: Sword_A|peasentAction
+  - first:
+      74: -5826773275891342138
+    second: Sword_A|StaffAction
+  - first:
+      74: -8546253117952036094
+    second: Sword_A|Sword_AAction
+  - first:
+      74: -2683567609368773979
+    second: Sword_A|SwordAction
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
