@@ -1,7 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1464619614	Dice_roll			\Default Work Unit\Dice\Dice_roll	
+	3725903807	music_start			\Default Work Unit\Music\music_start	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	340920121	Dice_ Roll	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Windows\SFX\FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_5A7A4554.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_Sequence\Dice_ Roll		2259
+	340920121	Dice_ Roll	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Windows\SFX\FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_BE01294F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_Sequence\Dice_ Roll		2259
 	672918623	Dice_ Roll_02	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Windows\SFX\FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_Sequence\Dice_ Roll_02		13609
+	1046005575	AMB	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Windows\SFX\AMB_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Container\Level\AMB		3677815
 
