@@ -18,7 +18,9 @@ public class DiceResult : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (body.velocity.magnitude < 1e-4 && currentlyRolling) {
-            Debug.Log("Rolling Dice Result: " + (getBestPlane() + 1).ToString());
+            int diceResult = getBestPlane() + 1;
+            Debug.Log("Rolling Dice Result: " + (diceResult).ToString());
+            Gamestate.instance.diceRoll(diceResult);
             currentlyRolling = false;
         }
         if (body.velocity.magnitude > 1)

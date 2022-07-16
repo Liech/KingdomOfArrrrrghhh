@@ -30,13 +30,16 @@ public class DiceGrabbing : MonoBehaviour
     }
 
     void OnMouseDown() {
-
+        if (Gamestate.instance.currentState != GamestateEnum.DiceRoll)
+            return;
         zCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         offset = gameObject.transform.position - getMouseAsWorldPoint();
         currentlyGrabbing = true;
     }
 
     private void OnMouseUp() {
+        if (Gamestate.instance.currentState != GamestateEnum.DiceRoll)
+            return;
         if (currentlyGrabbing) {
             currentlyGrabbing = false;
             if (momentum.magnitude > maximumMomentum) {
@@ -47,6 +50,8 @@ public class DiceGrabbing : MonoBehaviour
     }
 
     void OnMouseDrag() {
+        if (Gamestate.instance.currentState != GamestateEnum.DiceRoll)
+            return;
         var worldPoint = getMouseAsWorldPoint();
         Vector3 oldpos = transform.position;
         transform.position =  worldPoint + offset;
