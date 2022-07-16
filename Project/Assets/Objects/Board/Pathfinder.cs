@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Pathfinder : MonoBehaviour {
     public float sphereRadius = 0.4f;
-    int walkingDistance = 4;
+    public int walkingDistance = 4;
 
     // Start is called before the first frame update
     void Start() {
@@ -25,6 +26,7 @@ public class Pathfinder : MonoBehaviour {
         }
         return true;
     }
+
     IEnumerator showPath() {
         while (true) {
             setPathTiles();
@@ -33,26 +35,62 @@ public class Pathfinder : MonoBehaviour {
     }
 
     List<Vector3Int> possibleDirections() {
-        return { 
-          new Vector3Int(0,0,0)
+        return new List<Vector3Int>{
+          new Vector3Int(0,1,0),
+          new Vector3Int(0,-1,0),
+          new Vector3Int(1,1,0),
+          new Vector3Int(-1,-1,0)
         };
     }
 
+    class todoItem {
+        public Vector3Int pos;
+        public int stepsTaken = 0;
+    }
     void setPathTiles() {
         HexBoard board = HexBoard.instance();
         Vector3Int cellID = board.GetComponent<Grid>().WorldToCell(transform.position);
         cellID.z = 0;
-        for (int x = -walkingDistance; x < walkingDistance; x++)
-            for (int y = -walkingDistance; y < walkingDistance; y++) {
-                if (Mathf.Abs(x) + Mathf.Abs(y) > walkingDistance)
-                    continue;
-                Vector3Int currentCell = cellID + new Vector3Int(x, y, 0);
-                if (isPassable(currentCell))
-                    board.RangeIndicatorTilemap.SetTile(currentCell, null);
-                else
-                    board.RangeIndicatorTilemap.SetTile(currentCell, board.rangeTile);
-            }
-    }
 
-    
+        HashSet<Vector3Int> visited = new HashSet<Vector3Int>();
+        HashSet<Vector3Int> reachable = new HashSet<Vector3Int>();
+
+
+        List<todoItem> todo = new List<todoItem>();
+        todoItem first = new todoItem();
+        first.pos = cellID;
+        first.stepsTaken = 0;
+        todo.Add(first);
+        
+        //cheap dijkstra
+        while(todo.Count > 0) {
+            todoItem current = todo[0];
+            todo.RemoveAt(0);
+            reachable.Add(current.pos);
+            foreach (var dir in possibleDirections()) {
+                Vector3Int step = current.pos + dir;
+
+                if (visited.Contains(step))
+                    continue;
+                visited.Add(step);
+
+                if (!isPassable(step))
+                    continue;
+                if (current.stepsTaken >= walkingDistance)
+                    continue;
+
+                todoItem newStep = new todoItem();
+                newStep.pos = step;
+                newStep.stepsTaken = current.stepsTaken + 1;
+                todo.Add(newStep);
+            }
+
+            todo.OrderBy(x => x.stepsTaken);
+        }
+
+        foreach(var r in visited)
+            board.RangeIndicatorTilemap.SetTile(r, null);
+        foreach (var r in reachable)
+            board.RangeIndicatorTilemap.SetTile(r, board.rangeTile);
+    }   
 }
