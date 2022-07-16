@@ -13,7 +13,7 @@ public class InitiativeOrderElement : MonoBehaviour {
     }
 
     public void Update() {
-        if (backgroundimage) {
+        if (backgroundimage && target) {
             backgroundimage.color = target.GetComponent<FactionMember>().getFaction().Color;
         }
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-
+using UnityEngine.SceneManagement;
 
 public enum GamestateEnum {
     UnitMovement, UnitAttack, DiceRoll
@@ -10,7 +10,8 @@ public enum GamestateEnum {
 public class Gamestate : MonoBehaviour
 {
     public static Gamestate instance;
-    
+
+    public string nextScene = "Victory";
     public List<UnitInformation> initiativeOrder = new List<UnitInformation>();
 
     public GamestateEnum currentState = GamestateEnum.UnitMovement;
@@ -65,6 +66,7 @@ public class Gamestate : MonoBehaviour
         else 
             AttackSelectedButton.instance.transform.GetChild(0).gameObject.SetActive(false);
 
+        victoryCheck();
     }
 
     public void moveUnitTo(Vector3Int tile) {
@@ -148,4 +150,36 @@ public class Gamestate : MonoBehaviour
         initiativeOrder.Remove(info);
     }
 
+
+
+    bool victoryStarted = false;
+    void victoryCheck() {
+        bool opponentFound = false;
+        bool ownUnitFound = false;
+        foreach (var x in initiativeOrder) {
+            if (x.GetComponent<FactionMember>().FactionID == 1)
+                opponentFound = true;
+            if (x.GetComponent<FactionMember>().FactionID == 0)
+                ownUnitFound = true;
+        }
+
+        if (!opponentFound && !victoryStarted) {
+            victoryStarted = true;
+            StartCoroutine(switchToNextScene());
+        }
+        if (!ownUnitFound && !victoryStarted) {
+            victoryStarted = true;
+            StartCoroutine(switchToLost());
+        }
+    }
+
+    IEnumerator switchToNextScene() {
+        yield return new WaitForSeconds(3f); //thinking
+        SceneManager.LoadScene(nextScene);
+        LoadScene.currentScene = nextScene;
+    }
+    IEnumerator switchToLost() {
+        yield return new WaitForSeconds(3f); //thinking
+        SceneManager.LoadScene("Lost");
+    }
 }
