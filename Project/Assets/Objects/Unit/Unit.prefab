@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: -1479862090035912042}
   - component: {fileID: 7584159098737562100}
   - component: {fileID: 2613001140089259556}
+  - component: {fileID: 8231664360726709748}
+  - component: {fileID: 8080658758466197194}
   m_Layer: 0
   m_Name: Unit
   m_TagString: Untagged
@@ -92,6 +94,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorTarget: {fileID: 695007236539518594}
+--- !u!114 &8231664360726709748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240742316625046549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05bf7114ccfff2458be72ba2f8075ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8080658758466197194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240742316625046549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52657e7d6dadccf49ab6cb497405fd2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TravelDistance: 3
+  Description: Loyal Servant. Serving really loyal!
 --- !u!1 &638534010563802291
 GameObject:
   m_ObjectHideFlags: 0

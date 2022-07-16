@@ -535,7 +535,7 @@ PrefabInstance:
     - target: {fileID: 240742316625046549, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: m_Name
-      value: Unit
+      value: Boba
       objectReference: {fileID: 0}
     - target: {fileID: 2832077770626298283, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -696,7 +696,7 @@ PrefabInstance:
     - target: {fileID: 240742316625046549, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: m_Name
-      value: Unit (1)
+      value: Herbert
       objectReference: {fileID: 0}
     - target: {fileID: 2832077770626298283, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -771,7 +771,7 @@ PrefabInstance:
     - target: {fileID: 240742316625046549, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: m_Name
-      value: Opponent
+      value: Karen
       objectReference: {fileID: 0}
     - target: {fileID: 2832077770626298283, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
