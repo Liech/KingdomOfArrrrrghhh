@@ -17,7 +17,7 @@ public class Gamestate : MonoBehaviour
     public UnitInformation currentUnit;
     public UnitInformation attackingUnit;
     public UnitInformation attackedUnit;
-    HashSet<UnitInformation> attackable = new HashSet<UnitInformation>();
+    public HashSet<UnitInformation> attackable = new HashSet<UnitInformation>();
     public GameObject CurrentUnitIndicatior = null;
     public GameObject attackIndicatorObject;
 
