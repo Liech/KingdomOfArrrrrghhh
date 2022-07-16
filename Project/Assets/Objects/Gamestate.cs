@@ -56,8 +56,9 @@ public class Gamestate : MonoBehaviour
         if (currentUnitCanBeMoved()) {
             HexBoard board = HexBoard.instance();
             if (Pathfinder.instance.getReachableTiles(currentUnit.gameObject, currentUnit.TravelDistance).Contains(tile)) {
-                Vector3 pos = board.GetComponent<Grid>().CellToWorld(tile) + new Vector3(0, 0.1f, 0);
+                Vector3 pos = board.GetComponent<Grid>().CellToWorld(tile) - new Vector3(0, 0.2f, 0);
                 currentUnit.transform.position = pos;
+                currentUnit.transform.rotation = Quaternion.identity;
 
                 var units = Pathfinder.instance.getUnits(currentUnit.gameObject, currentUnit.attackRange);
                 if (units.Count != 0) {

@@ -76,7 +76,7 @@ public class Pathfinder : MonoBehaviour {
             foreach(var obj in objects) {
                 if (obj.attachedRigidbody != null) {
                     var o = obj.attachedRigidbody.gameObject;
-                    if (o.GetComponent<UnitInformation>())
+                    if (o.GetComponent<UnitInformation>() && o.GetComponent<UnitInformation>() != unit.GetComponent<UnitInformation>())
                         result.Add(o.GetComponent<UnitInformation>());
                 }
             }
