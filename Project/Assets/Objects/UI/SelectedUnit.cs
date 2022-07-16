@@ -6,6 +6,7 @@ public class SelectedUnit : MonoBehaviour
 {
     public static SelectedUnit instance;
     bool clickThisFrame = false;
+    public UnitInformation currentUnit;
     // Start is called before the first frame update
     void Awake()
     {
@@ -20,16 +21,23 @@ public class SelectedUnit : MonoBehaviour
     public void setSelectedUnit(UnitInformation unit) {
         selected = unit;
         if (UnitInfo.instance) {
-            UnitInfo.instance.setUnit(unit);
-            Pathfinder.instance.setUnit(unit.gameObject);
-            Pathfinder.instance.showReachable = true;
+            if (unit) {
+                currentUnit = unit;
+                UnitInfo.instance.setUnit(unit);
+                Pathfinder.instance.setUnit(unit.gameObject);
+                Pathfinder.instance.showReachable = true;
+            }
+            else {
+                currentUnit = null;
+                UnitInfo.instance.setUnit(null);
+                Pathfinder.instance.showReachable = false;
+            }
         }
     }
 
     private void Update() {
         if (Input.GetButtonDown("Fire2")) {
-            UnitInfo.instance.setUnit(null);
-            Pathfinder.instance.showReachable = false;
+                setSelectedUnit(null);
         }
     }
 }

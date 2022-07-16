@@ -6,4 +6,14 @@ public class UnitInformation : MonoBehaviour
 {
     public int TravelDistance = 3;
     public string Description = "Loyal Servant. Serving really loyal!";
+    public float Initiative = 1;
+
+
+    public void Start() {
+        Gamestate.instance.addUnit(this);
+    }
+
+    public void OnDestroy() {
+        Gamestate.instance.removeUnit(this);
+    }
 }
