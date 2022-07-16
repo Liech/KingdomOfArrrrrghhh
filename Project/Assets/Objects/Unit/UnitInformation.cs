@@ -25,6 +25,11 @@ public class UnitInformation : MonoBehaviour
             onDestruction = true;
             StartCoroutine(destructionAnimation());
         }
+
+        var upDir = transform.rotation * new Vector3(0.0f, 1.0f, 0.0f);
+        float upness = Vector3.Dot(upDir, new Vector3(0, 1, 0));
+        if (upness < 0.2 && GetComponent<Rigidbody>().velocity.magnitude < 1e-1f && GetComponent<Rigidbody>().angularVelocity.magnitude < 1e-1f)
+            currentLife--;
     }
 
     public void OnDestroy() {
@@ -39,5 +44,16 @@ public class UnitInformation : MonoBehaviour
             onDeathEffect.SetActive(true);
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
+    }
+
+    public void blockRotation() {
+        GetComponent<Rigidbody>().freezeRotation = true;
+        StartCoroutine(unblockRot());
+
+    }
+    IEnumerator unblockRot() {
+
+        yield return new WaitForSeconds(2f);
+        GetComponent<Rigidbody>().freezeRotation = false;
     }
 }

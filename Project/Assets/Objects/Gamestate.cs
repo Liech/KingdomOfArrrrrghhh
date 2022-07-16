@@ -17,7 +17,7 @@ public class Gamestate : MonoBehaviour
     public UnitInformation currentUnit;
     public UnitInformation attackingUnit;
     public UnitInformation attackedUnit;
-    HashSet<UnitInformation> attackable = new HashSet<UnitInformation>();
+    public HashSet<UnitInformation> attackable = new HashSet<UnitInformation>();
     public GameObject CurrentUnitIndicatior = null;
     public GameObject attackIndicatorObject;
 
@@ -44,11 +44,11 @@ public class Gamestate : MonoBehaviour
         if (CurrentUnitIndicatior)
           CurrentUnitIndicatior.transform.position = currentUnit.transform.position + new Vector3(0, +3, 0);
 
-        if (currentState == GamestateEnum.UnitAttack) {
+        if (currentState == GamestateEnum.UnitAttack && attackingUnit) {
             var selected = SelectedUnit.instance.getSelectedUnit();
             bool selectedExists = selected != null;
             bool attackingExists = attackingUnit != null;
-            bool factionDifferent = selected.GetComponent<FactionMember>().FactionID != attackingUnit.GetComponent<FactionMember>().FactionID;
+            bool factionDifferent = selected && attackingUnit && selected.GetComponent<FactionMember>().FactionID != attackingUnit.GetComponent<FactionMember>().FactionID;
             bool isAttackable = attackable.Contains(selected);
             if (selectedExists && attackingExists && factionDifferent && isAttackable) {
                 AttackSelectedButton.instance.transform.GetChild(0).gameObject.SetActive(true);
@@ -57,20 +57,27 @@ public class Gamestate : MonoBehaviour
                 AttackSelectedButton.instance.transform.GetChild(0).gameObject.SetActive(false);
             }
         }
+        else if (!attackingUnit && currentState == GamestateEnum.UnitAttack) {
+            currentState = GamestateEnum.UnitMovement;
+            SelectedUnit.instance.setSelectedUnit(null);
+            setNextUnitToCurrent();
+        }
         else 
             AttackSelectedButton.instance.transform.GetChild(0).gameObject.SetActive(false);
 
     }
 
     public void moveUnitTo(Vector3Int tile) {
-        if (currentState != GamestateEnum.UnitMovement || currentUnit.GetComponent<FactionMember>().FactionID != 0)
+        if (currentState != GamestateEnum.UnitMovement)
             return;
         if (currentUnitCanBeMoved()) {
             HexBoard board = HexBoard.instance();
             if (Pathfinder.instance.getReachableTiles(currentUnit.gameObject, currentUnit.TravelDistance).Contains(tile)) {
-                Vector3 pos = board.GetComponent<Grid>().CellToWorld(tile) - new Vector3(0, 0.2f, 0);
+                Vector3 pos = board.GetComponent<Grid>().CellToWorld(tile);
+                pos.y = board.transform.position.y;
                 currentUnit.transform.position = pos;
-                currentUnit.transform.rotation = Quaternion.identity;
+                //currentUnit.transform.rotation = Quaternion.identity;
+                currentUnit.blockRotation();
 
                 var units = Pathfinder.instance.getUnits(currentUnit.gameObject, currentUnit.attackRange);
                 if (units.Count != 0) {
@@ -107,6 +114,8 @@ public class Gamestate : MonoBehaviour
     }
 
     public void attackUnit(UnitInformation attackedUnit) {
+        if (attackingUnit == attackedUnit)
+            return;
         if (attackedUnit == null) {
             currentState = GamestateEnum.UnitMovement;
             SelectedUnit.instance.setSelectedUnit(null);
@@ -124,7 +133,7 @@ public class Gamestate : MonoBehaviour
     }
 
     public bool currentUnitCanBeMoved() {
-        return SelectedUnit.instance.currentUnit != null && SelectedUnit.instance.currentUnit == currentUnit && currentUnit.GetComponent<FactionMember>().FactionID == 0 && currentState == GamestateEnum.UnitMovement;
+        return SelectedUnit.instance.currentUnit != null && SelectedUnit.instance.currentUnit == currentUnit && currentState == GamestateEnum.UnitMovement;
     }
     void setNextUnitToCurrent() {
         initiativeOrder.OrderBy(x => x.Initiative);

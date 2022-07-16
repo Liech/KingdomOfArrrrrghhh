@@ -25,9 +25,11 @@ public class HoverTileManager : MonoBehaviour
             cell.z = 0;
             board.HoverTilemap.SetTile(cell, board.hoverTile);
 
-
-            if (Input.GetButtonDown("Fire1")) {
-                Gamestate.instance.moveUnitTo(cell);
+            if (Gamestate.instance.currentUnit) {
+                bool yourTurn = Gamestate.instance.currentUnit.GetComponent<FactionMember>().FactionID == 0;
+                if (Input.GetButtonDown("Fire1") && yourTurn) {
+                    Gamestate.instance.moveUnitTo(cell);
+                }
             }
         }
 
