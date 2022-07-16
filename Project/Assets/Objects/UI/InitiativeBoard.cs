@@ -25,6 +25,13 @@ public class InitiativeBoard : MonoBehaviour
 
     void updateInitiative() {
         var order = Gamestate.instance.initiativeOrder;
+        if (order.Count == 0 || Gamestate.instance.currentUnit == null) {
+
+            foreach (Transform child in transform) {
+                GameObject.Destroy(child.gameObject);
+            }
+            return;
+        }
         order = order.ToArray().ToList();
         List<UnitInformation> shownOrder = new List<UnitInformation>();
         for(int i = 0;i < order.Count; i++) {
@@ -34,11 +41,15 @@ public class InitiativeBoard : MonoBehaviour
         foreach (Transform child in transform) {
             GameObject.Destroy(child.gameObject);
         }
+        int count = 0;
         foreach (var o in shownOrder) {
             var obj = Instantiate(uiElement, transform);
             obj.GetComponent<InitiativeOrderElement>().image.sprite = o.portrait;
             obj.GetComponent<InitiativeOrderElement>().target = o.gameObject;
             obj.GetComponent<InitiativeOrderElement>().name.GetComponent<TMPro.TextMeshProUGUI>().text = o.name;
+            count++;
+            if (count > 5)
+                return;
         }
     }
 }
