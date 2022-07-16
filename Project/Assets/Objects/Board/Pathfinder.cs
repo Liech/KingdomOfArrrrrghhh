@@ -15,10 +15,11 @@ public class Pathfinder : MonoBehaviour {
 
     }
 
-    public bool isPassable(Vector3Int pos) {
+    //from can be used later for control zones, is not used yet
+    public bool isPassable(Vector3Int to, Vector3Int from) {
         RaycastHit hit;
         HexBoard board = HexBoard.instance();
-        Vector3 p1 = board.GetComponent<Grid>().CellToWorld(pos) + new Vector3(0, sphereRadius + 0.2f, 0);
+        Vector3 p1 = board.GetComponent<Grid>().CellToWorld(to) + new Vector3(0, sphereRadius + 0.2f, 0);
 
         // Cast a sphere wrapping character controller 10 meters forward
         // to see if it is about to hit anything.
@@ -48,6 +49,7 @@ public class Pathfinder : MonoBehaviour {
 
     class todoItem {
         public Vector3Int pos;
+        public Vector3Int from;
         public int stepsTaken = 0;
     }
     void setPathTiles() {
@@ -63,6 +65,7 @@ public class Pathfinder : MonoBehaviour {
         todoItem first = new todoItem();
         first.pos = cellID;
         first.stepsTaken = 0;
+        first.from = cellID;
         todo.Add(first);
         
         //cheap dijkstra
@@ -77,13 +80,14 @@ public class Pathfinder : MonoBehaviour {
                     continue;
                 visited.Add(step);
 
-                if (!isPassable(step))
+                if (!isPassable(step, current.pos))
                     continue;
                 if (current.stepsTaken >= walkingDistance)
                     continue;
 
                 todoItem newStep = new todoItem();
                 newStep.pos = step;
+                newStep.from = current.pos;
                 newStep.stepsTaken = current.stepsTaken + 1;
                 todo.Add(newStep);
             }

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2519011112829413110}
   - component: {fileID: 877116227456672875}
   - component: {fileID: 3882553845489635388}
+  - component: {fileID: 8246166263314251615}
+  - component: {fileID: 1058192902903142853}
   m_Layer: 0
   m_Name: Master
   m_TagString: Untagged
@@ -111,3 +113,31 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
+--- !u!114 &8246166263314251615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2377918928170577050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51b3ffe4ddacc44fa7e87dd1e65d582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FactionID: 0
+  Color: {r: 1, g: 0.8044406, b: 0, a: 1}
+--- !u!114 &1058192902903142853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2377918928170577050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51b3ffe4ddacc44fa7e87dd1e65d582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FactionID: 1
+  Color: {r: 1, g: 0.13781394, b: 0, a: 1}
