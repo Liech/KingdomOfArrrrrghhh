@@ -25,6 +25,10 @@ public class UnitInformation : MonoBehaviour
             onDestruction = true;
             StartCoroutine(destructionAnimation());
         }
+
+        var upDir = transform.rotation * -new Vector3(0.0f, 1.0f, 0.0f);
+        float upness = Vector3.Dot(upDir, new Vector3(0, 1, 0));
+        Debug.Log(gameObject.name + ": " + upness.ToString());
     }
 
     public void OnDestroy() {
