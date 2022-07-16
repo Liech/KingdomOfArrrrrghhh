@@ -215,6 +215,7 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Units" ID="{AA01C30B-7680-4447-AAA7-984EE5338C14}" ShortID="360641986"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

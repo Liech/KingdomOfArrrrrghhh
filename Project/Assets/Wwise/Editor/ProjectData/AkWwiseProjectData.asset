@@ -66,7 +66,11 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 037a1b072cea8d47a736fc29b037e247
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585436858398411625
+=======
+    m_lastTime: -8585436370878535703
+>>>>>>> Stashed changes
     List:
     - name: Master
       guid: ee70d1f111137e409cfe52f3ce710da4
@@ -94,7 +98,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 34943bffbc305042a78cbf4b6da44856
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585436858398990070
+=======
+    m_lastTime: -8585436370878324794
+>>>>>>> Stashed changes
     List:
     - name: Dice
       guid: 68387813a8b60b4498726c7c9c425fe2
@@ -133,6 +141,60 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: 0.213156
       minDuration: 0.100191
+    - name: Music
+      guid: 9cd192e873149d4b909bac1b11ee78bf
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 34943bffbc305042a78cbf4b6da44856
+      - ElementName: Music
+        ObjectType: 4
+        guid: 9cd192e873149d4b909bac1b11ee78bf
+      Path: Events/Default Work Unit/Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: music_start
+      guid: 8c56c34729822648be8be99a2db88858
+      id: 3725903807
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 34943bffbc305042a78cbf4b6da44856
+      - ElementName: Music
+        ObjectType: 4
+        guid: 9cd192e873149d4b909bac1b11ee78bf
+      - ElementName: music_start
+        ObjectType: 3
+        guid: 8c56c34729822648be8be99a2db88858
+      Path: Events/Default Work Unit/Music/music_start
+      maxAttenuation: 0
+      maxDuration: 241.74
+      minDuration: 241.74
+    - name: Units
+      guid: 87283cc97bcef849af8cdcfccb0c8abb
+      id: 1821810158
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 34943bffbc305042a78cbf4b6da44856
+      - ElementName: Units
+        ObjectType: 4
+        guid: 87283cc97bcef849af8cdcfccb0c8abb
+      Path: Events/Default Work Unit/Units
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
