@@ -45,4 +45,15 @@ public class UnitInformation : MonoBehaviour
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
     }
+
+    public void blockRotation() {
+        GetComponent<Rigidbody>().freezeRotation = true;
+        StartCoroutine(unblockRot());
+
+    }
+    IEnumerator unblockRot() {
+
+        yield return new WaitForSeconds(2f);
+        GetComponent<Rigidbody>().freezeRotation = false;
+    }
 }
