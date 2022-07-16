@@ -11,7 +11,7 @@ public class Gamestate : MonoBehaviour
 {
     public static Gamestate instance;
     
-    List<UnitInformation> initiativeOrder = new List<UnitInformation>();
+    public List<UnitInformation> initiativeOrder = new List<UnitInformation>();
 
     public GamestateEnum currentState = GamestateEnum.UnitMovement;
     public UnitInformation currentUnit;

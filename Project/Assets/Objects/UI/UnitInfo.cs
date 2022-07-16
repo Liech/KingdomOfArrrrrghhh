@@ -9,6 +9,8 @@ public class UnitInfo : MonoBehaviour
     public GameObject walkDistance;
     public GameObject description;
     public GameObject name;
+    public GameObject life;
+    public GameObject portrait;
 
     // Start is called before the first frame update
     void Awake()
@@ -24,7 +26,9 @@ public class UnitInfo : MonoBehaviour
             walkDistance.GetComponent<TextMeshProUGUI>().SetText(unit.TravelDistance.ToString());
             description.GetComponent<TextMeshProUGUI>().SetText(unit.Description);
             name.GetComponent<TextMeshProUGUI>().SetText(unit.gameObject.name);
+            life.GetComponent<TextMeshProUGUI>().SetText(unit.currentLife.ToString() + "/" + unit.maxLife.ToString());
             transform.GetChild(0).gameObject.SetActive(true);
+            portrait.GetComponent<UnityEngine.UI.Image>().sprite = unit.portrait;
         }
     }
 

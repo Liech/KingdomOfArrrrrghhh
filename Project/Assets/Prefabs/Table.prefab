@@ -831,8 +831,14 @@ PrefabInstance:
     - target: {fileID: 7584159098737562100, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: FactionID
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
+        type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c9eef5bc1677be4caf5c80685983d6a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcc2682de34823b4080268fce911817c, type: 3}
 --- !u!4 &5927109627180293259 stripped

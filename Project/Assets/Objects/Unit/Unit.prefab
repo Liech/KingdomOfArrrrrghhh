@@ -120,6 +120,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TravelDistance: 3
   Description: Loyal Servant. Serving really loyal!
+  Initiative: 1
+  maxLife: 4
+  currentLife: 4
+  portrait: {fileID: 21300000, guid: e01591a7a9c157e4aa2e56a625547976, type: 3}
 --- !u!1 &638534010563802291
 GameObject:
   m_ObjectHideFlags: 0
