@@ -5,7 +5,8 @@ using System.Linq;
 
 public class Pathfinder : MonoBehaviour {
     public float sphereRadius = 0.4f;
-    public int walkingDistance = 4;
+    public int walkingDistance = 3;
+    public Vector3Int possibleDir = new Vector3Int(1,0,0);
 
     // Start is called before the first frame update
     void Start() {
@@ -34,12 +35,14 @@ public class Pathfinder : MonoBehaviour {
         }
     }
 
-    List<Vector3Int> possibleDirections() {
+    List<Vector3Int> possibleDirections(Vector3Int pos) {
         return new List<Vector3Int>{
-          new Vector3Int(0,1,0),
-          new Vector3Int(0,-1,0),
-          new Vector3Int(1,1,0),
-          new Vector3Int(-1,-1,0)
+            new Vector3Int(1,0,0),
+            new Vector3Int(-1,0,0),
+            new Vector3Int(((Mathf.Abs(pos.y%2)==0)?-1:0),1,0),
+            new Vector3Int(((Mathf.Abs(pos.y%2)==0)?-1:0),-1,0),
+            new Vector3Int(((Mathf.Abs(pos.y%2)==1)?1:0),1,0),
+            new Vector3Int(((Mathf.Abs(pos.y%2)==1)?1:0),-1,0),            
         };
     }
 
@@ -67,7 +70,7 @@ public class Pathfinder : MonoBehaviour {
             todoItem current = todo[0];
             todo.RemoveAt(0);
             reachable.Add(current.pos);
-            foreach (var dir in possibleDirections()) {
+            foreach (var dir in possibleDirections(current.pos)) {
                 Vector3Int step = current.pos + dir;
 
                 if (visited.Contains(step))
@@ -88,7 +91,11 @@ public class Pathfinder : MonoBehaviour {
             todo.OrderBy(x => x.stepsTaken);
         }
 
-        foreach(var r in visited)
+        for (int x = -walkingDistance-3; x < walkingDistance+3; x++)
+            for (int y = -walkingDistance-3; y < walkingDistance+3; y++)
+                board.RangeIndicatorTilemap.SetTile(first.pos + new Vector3Int(x,y,0), null);
+
+        foreach (var r in visited)
             board.RangeIndicatorTilemap.SetTile(r, null);
         foreach (var r in reachable)
             board.RangeIndicatorTilemap.SetTile(r, board.rangeTile);
