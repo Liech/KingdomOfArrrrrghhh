@@ -26,9 +26,11 @@ public class UnitInformation : MonoBehaviour
             StartCoroutine(destructionAnimation());
         }
 
-        var upDir = transform.rotation * -new Vector3(0.0f, 1.0f, 0.0f);
+        var upDir = transform.rotation * new Vector3(0.0f, 1.0f, 0.0f);
         float upness = Vector3.Dot(upDir, new Vector3(0, 1, 0));
-        Debug.Log(gameObject.name + ": " + upness.ToString());
+        //Debug.Log(gameObject.name + ": " + upness.ToString());
+        if (upness < 0.2 && GetComponent<Rigidbody>().velocity.magnitude < 1e-1f && GetComponent<Rigidbody>().angularVelocity.magnitude < 1e-1f)
+            currentLife--;
     }
 
     public void OnDestroy() {
