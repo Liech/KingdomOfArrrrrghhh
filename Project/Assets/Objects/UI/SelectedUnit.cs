@@ -21,12 +21,15 @@ public class SelectedUnit : MonoBehaviour
         selected = unit;
         if (UnitInfo.instance) {
             UnitInfo.instance.setUnit(unit);
+            Pathfinder.instance.setUnit(unit.gameObject);
+            Pathfinder.instance.showReachable = true;
         }
     }
 
     private void Update() {
         if (Input.GetButtonDown("Fire2")) {
             UnitInfo.instance.setUnit(null);
+            Pathfinder.instance.showReachable = false;
         }
     }
 }
