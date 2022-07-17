@@ -59,7 +59,7 @@ public class Pathfinder : MonoBehaviour {
         };
     }
 
-    class todoItem {
+    public class todoItem {
         public Vector3Int pos;
         public Vector3Int from;
         public int stepsTaken = 0;
@@ -69,11 +69,11 @@ public class Pathfinder : MonoBehaviour {
         HexBoard board = HexBoard.instance();
         var tiles = getReachableTiles(unit, distance, true);
         HashSet<UnitInformation> result = new HashSet<UnitInformation>();
-        foreach(var t in tiles) {
+        foreach (var t in tiles) {
             RaycastHit hit;
             Vector3 p1 = board.GetComponent<Grid>().CellToWorld(t) + new Vector3(0, sphereRadius + 0.2f, 0);
             var objects = Physics.OverlapSphere(p1, sphereRadius);
-            foreach(var obj in objects) {
+            foreach (var obj in objects) {
                 if (obj.attachedRigidbody != null) {
                     var o = obj.attachedRigidbody.gameObject;
                     if (o.GetComponent<UnitInformation>() && o.GetComponent<UnitInformation>() != unit.GetComponent<UnitInformation>())
@@ -84,6 +84,53 @@ public class Pathfinder : MonoBehaviour {
         return result;
     }
 
+    public HashSet<todoItem> getReachableTilesWithDistance(GameObject unit, int walkingSpeed, bool ignoreObstacles = false) {
+        HexBoard board = HexBoard.instance();
+        Vector3Int cellID = board.GetComponent<Grid>().WorldToCell(unit.transform.position);
+        cellID.z = 0;
+
+        HashSet<Vector3Int> visited = new HashSet<Vector3Int>();
+        HashSet<todoItem> reachable = new HashSet<todoItem>();
+
+        List<todoItem> todo = new List<todoItem>();
+        todoItem first = new todoItem();
+        first.pos = cellID;
+        first.stepsTaken = 0;
+        first.from = cellID;
+        todo.Add(first);
+
+        //cheap dijkstra
+        while (todo.Count > 0) {
+            todoItem current = todo[0];
+            todo.RemoveAt(0);
+            reachable.Add(current);
+            foreach (var dir in possibleDirections(current.pos)) {
+                Vector3Int step = current.pos + dir;
+
+                if (visited.Contains(step))
+                    continue;
+                visited.Add(step);
+
+                if (!ignoreObstacles) {
+                    if (!isPassable(step, current.pos))
+                        continue;
+                }
+                if (current.stepsTaken >= walkingSpeed)
+                    continue;
+                if (board.assetTiles.GetTile(step) == null)
+                    continue;
+
+                todoItem newStep = new todoItem();
+                newStep.pos = step;
+                newStep.from = current.pos;
+                newStep.stepsTaken = current.stepsTaken + 1;
+                todo.Add(newStep);
+            }
+
+            todo.OrderBy(x => x.stepsTaken);
+        }
+        return reachable;
+    }
     public HashSet<Vector3Int> getReachableTiles(GameObject unit, int walkingSpeed, bool ignoreObstacles = false) {
         HexBoard board = HexBoard.instance();
         Vector3Int cellID = board.GetComponent<Grid>().WorldToCell(unit.transform.position);

@@ -57,23 +57,50 @@ public class OpponentAI : MonoBehaviour {
             Gamestate.instance.moveUnitTo(element);
         }
         else {
+            var travelDistance = Pathfinder.instance.getReachableTilesWithDistance(bestTargetUnit.gameObject, 50);
+            Dictionary<Vector3Int, Pathfinder.todoItem> distanceCalculator = new Dictionary<Vector3Int, Pathfinder.todoItem>();
+            foreach (var x in travelDistance)
+                distanceCalculator[x.pos] = x;
 
-            HexBoard board = HexBoard.instance();
-            Vector3Int targetCellID = board.GetComponent<Grid>().WorldToCell(bestTargetUnit.transform.position);
-            targetCellID.z = 0;
+            int bestTravelDistance = int.MaxValue;
+            Vector3Int bestTraveTarget = new Vector3Int();
 
-            float bestDistanceToTarget = float.MaxValue;
-            Vector3Int bestMoveTile = new Vector3Int();
-
-            foreach (var x in inReach) {
-                float currentDistance = (targetCellID - x).magnitude;
-                if (currentDistance < bestDistanceToTarget) {
-                    bestDistanceToTarget = currentDistance;
-                    bestMoveTile = x;
+            foreach (var r in inReach) {
+                if (distanceCalculator.ContainsKey(r)) {
+                    int currentDistance = distanceCalculator[r].stepsTaken;
+                    if (currentDistance < bestTravelDistance) {
+                        bestTravelDistance = currentDistance;
+                        bestTraveTarget = r;
+                    }
                 }
             }
 
-            Gamestate.instance.moveUnitTo(bestMoveTile);
+
+
+            if (bestTravelDistance == int.MaxValue) {
+                HexBoard board = HexBoard.instance();
+                Vector3Int targetCellID = board.GetComponent<Grid>().WorldToCell(bestTargetUnit.transform.position);
+                targetCellID.z = 0;
+
+                float bestDistanceToTarget = float.MaxValue;
+                Vector3Int bestMoveTile = new Vector3Int();
+
+                foreach (var x in inReach) {
+                    float currentDistance = (targetCellID - x).magnitude;
+                    if (currentDistance < bestDistanceToTarget) {
+                        bestDistanceToTarget = currentDistance;
+                        bestMoveTile = x;
+                    }
+                }
+
+                Gamestate.instance.moveUnitTo(bestMoveTile);
+            }
+            else {
+
+                Gamestate.instance.moveUnitTo(bestTraveTarget);
+            }
+
+
         }
 
         actionActive = false;
