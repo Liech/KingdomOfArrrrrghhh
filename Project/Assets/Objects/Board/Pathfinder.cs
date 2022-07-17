@@ -76,8 +76,10 @@ public class Pathfinder : MonoBehaviour {
             foreach (var obj in objects) {
                 if (obj.attachedRigidbody != null) {
                     var o = obj.attachedRigidbody.gameObject;
-                    if (o.GetComponent<UnitInformation>() && o.GetComponent<UnitInformation>() != unit.GetComponent<UnitInformation>())
+                    if (o.GetComponent<UnitInformation>() && o.GetComponent<UnitInformation>() != unit.GetComponent<UnitInformation>() &&
+                        o.GetComponent<FactionMember>().FactionID != unit.GetComponent<FactionMember>().FactionID) {
                         result.Add(o.GetComponent<UnitInformation>());
+                    }
                 }
             }
         }
@@ -182,7 +184,8 @@ public class Pathfinder : MonoBehaviour {
     void setPathTiles() {
         HexBoard board = HexBoard.instance();
         if (showReachable) {
-
+            if (!currentUnit)
+                return;
             Vector3Int cellID = board.GetComponent<Grid>().WorldToCell(currentUnit.transform.position);
             cellID.z = 0;
             var reachable = getReachableTiles(currentUnit, walkingDistance);

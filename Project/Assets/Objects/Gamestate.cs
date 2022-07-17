@@ -97,7 +97,8 @@ public class Gamestate : MonoBehaviour
                 var units = Pathfinder.instance.getUnits(currentUnit.gameObject, currentUnit.attackRange);
                 if (units.Count != 0) {
                     currentState = GamestateEnum.UnitAttack;
-                    DoNotAttackButton.instance.transform.GetChild(0).gameObject.SetActive(true);
+                    if (currentUnit.GetComponent<FactionMember>().FactionID == 0)
+                         DoNotAttackButton.instance.transform.GetChild(0).gameObject.SetActive(true);
                     attackable.Clear();
                     foreach (var unit in units) {
                         if (unit.GetComponent<FactionMember>().FactionID == currentUnit.GetComponent<FactionMember>().FactionID)
