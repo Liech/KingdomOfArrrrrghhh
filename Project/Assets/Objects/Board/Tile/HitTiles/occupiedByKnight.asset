@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: occupiedByKnight
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: 0}
-  m_DefaultGameObject: {fileID: 4893954791951467275, guid: a92517217e82f4d4e9dc2413d8bd6a0b,
+  m_DefaultGameObject: {fileID: 4893954791951467275, guid: 0dbe11ff42a19da47a532abb09b4619d,
     type: 3}
   m_DefaultColliderType: 1
   m_TilingRules: []

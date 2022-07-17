@@ -35,7 +35,7 @@ public class HintLog : MonoBehaviour
         }
         if (Gamestate.instance.currentState == GamestateEnum.DiceRoll) {
             if (yourTurn) {
-                Log("Roll the dice with your mouse. Reset it with space.");
+                Log("Roll the dice!\nDrag and Drop the Dice.");
             }
             else
                 Log("Your oppenent Rolls the dice");

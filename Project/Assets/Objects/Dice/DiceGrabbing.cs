@@ -17,6 +17,8 @@ public class DiceGrabbing : MonoBehaviour
     private bool currentlyGrabbing = false;
     private Rigidbody body;
 
+    private Vector3 oldpos;
+
     void Start()
     {
         body = GetComponent<Rigidbody>();
@@ -24,9 +26,10 @@ public class DiceGrabbing : MonoBehaviour
         offset = gameObject.transform.position - getMouseAsWorldPoint();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        
+        momentum = (transform.position - oldpos) * momentumFactor;
+        oldpos = transform.position;
     }
 
     void OnMouseDown() {
@@ -43,6 +46,7 @@ public class DiceGrabbing : MonoBehaviour
             return;
         if (currentlyGrabbing) {
             currentlyGrabbing = false;
+            Debug.Log("Throwing strenght: " + momentum.magnitude);
             if (momentum.magnitude > maximumMomentum) {
                 momentum = momentum.normalized * maximumMomentum;
             }
@@ -54,12 +58,10 @@ public class DiceGrabbing : MonoBehaviour
         if (Gamestate.instance.currentState != GamestateEnum.DiceRoll)
             return;
         var worldPoint = getMouseAsWorldPoint();
-        Vector3 oldpos = transform.position;
         transform.position =  worldPoint + offset;
         if (transform.position.y < minimumHeight)
             transform.position = new Vector3(transform.position.x, minimumHeight, transform.position.z);
         body.velocity = new Vector3();
-        momentum = (transform.position - oldpos) * momentumFactor;
     }
 
     private Vector3 getMouseAsWorldPoint() {

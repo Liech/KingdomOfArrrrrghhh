@@ -12,7 +12,7 @@ public class RotateSlowly : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         var euler = transform.rotation.eulerAngles;
         euler.y += rotationspeed;

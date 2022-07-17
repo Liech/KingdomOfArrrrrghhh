@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FactionID: 0
-  Color: {r: 0.07210493, g: 0, b: 1, a: 1}
+  Color: {r: 0.44469094, g: 0.40251565, b: 1, a: 1}
 --- !u!114 &1058192902903142853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FactionID: 1
-  Color: {r: 1, g: 0.13781394, b: 0, a: 1}
+  Color: {r: 1, g: 0.37057582, b: 0.27044016, a: 1}
 --- !u!114 &5974758541682280936
 MonoBehaviour:
   m_ObjectHideFlags: 0
