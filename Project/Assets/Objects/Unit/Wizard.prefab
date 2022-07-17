@@ -137,11 +137,13 @@ MonoBehaviour:
   DeathSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 619d9ce9506604a2d83ad431ad9403b8,
+      type: 2}
   DamageSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: e70d7e36ac3af4e8ca74ed60b4dd2405,
+      type: 2}
 --- !u!1 &888615755120974569
 GameObject:
   m_ObjectHideFlags: 0

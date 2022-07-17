@@ -5,8 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Master" ID="{F1D170EE-1311-407E-9CFE-52F3CE710DA4}">
 					<ObjectInclusionList>
-						<ObjectRef Name="music_start" ID="{47C3568C-8229-4826-BE8B-E99A2DB88858}" WorkUnitID="{FF3B9434-30BC-4250-A78C-BF4B6DA44856}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Dice_roll" ID="{FA83F492-07B6-4B90-ACB3-FD0FAF1DA43B}" WorkUnitID="{FF3B9434-30BC-4250-A78C-BF4B6DA44856}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{FF3B9434-30BC-4250-A78C-BF4B6DA44856}" WorkUnitID="{FF3B9434-30BC-4250-A78C-BF4B6DA44856}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

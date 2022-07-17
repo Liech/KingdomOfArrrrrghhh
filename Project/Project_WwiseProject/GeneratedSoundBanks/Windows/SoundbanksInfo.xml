@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="127241429">
+		<SoundBank Id="4056684167" Language="SFX" Hash="463756136">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
@@ -49,7 +49,39 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2932280089" Name="Die_01" ObjectPath="\Events\Default Work Unit\Units\Mage\Die_01" DurationType="OneShot" DurationMin="3.675167" DurationMax="3.675167">
+					<IncludedMemoryFiles>
+						<File Id="803570850" Language="SFX">
+							<ShortName>Magic_Dying.wav</ShortName>
+							<Path>SFX/Magic_Dying_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2932280090" Name="Die_02" ObjectPath="\Events\Default Work Unit\Units\Archer\Die_02" DurationType="OneShot" DurationMin="1.684059" DurationMax="1.684059">
+					<IncludedMemoryFiles>
+						<File Id="953009990" Language="SFX">
+							<ShortName>Dead.wav</ShortName>
+							<Path>SFX/Dead_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1116398592" Name="Hit" ObjectPath="\Events\Default Work Unit\Units\Knight\Hit" DurationType="OneShot" DurationMin="0.511458" DurationMax="0.511458">
+					<IncludedMemoryFiles>
+						<File Id="253982336" Language="SFX">
+							<ShortName>Metal hit.wav</ShortName>
+							<Path>SFX/Metal hit_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3205006518" Name="Hit_01" ObjectPath="\Events\Default Work Unit\Units\Mage\Hit_01" DurationType="OneShot" DurationMin="0.60424" DurationMax="0.60424">
+					<IncludedMemoryFiles>
+						<File Id="282863686" Language="SFX">
+							<ShortName>Ouch.wav</ShortName>
+							<Path>SFX/Ouch_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3205006517" Name="Hit_02" ObjectPath="\Events\Default Work Unit\Units\Archer\Hit_02" DurationType="OneShot" DurationMin="0.511458" DurationMax="0.511458">
 					<IncludedMemoryFiles>
 						<File Id="253982336" Language="SFX">
 							<ShortName>Metal hit.wav</ShortName>

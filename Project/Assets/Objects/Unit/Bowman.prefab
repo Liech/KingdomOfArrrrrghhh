@@ -190,6 +190,7 @@ MonoBehaviour:
   maxLife: 3
   attackRange: 3
   currentLife: 3
+  numberOfAttacks: 1
   portrait: {fileID: 21300000, guid: c47ee01e02cabaa46a618575886ad0e7, type: 3}
   onDeathEffect: {fileID: 6796063379072153302}
   gotDamage: {fileID: 1348408521557033509}
@@ -197,11 +198,13 @@ MonoBehaviour:
   DeathSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 3981152fc0d904d9fbe312f6c937deac,
+      type: 2}
   DamageSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a21a92d25035440f5b4616e980c88d0f,
+      type: 2}
 --- !u!1 &289187937888963570
 GameObject:
   m_ObjectHideFlags: 0

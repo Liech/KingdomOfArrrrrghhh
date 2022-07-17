@@ -3,13 +3,19 @@ Event	ID	Name			Wwise Object Path	Notes
 	1116398592	Hit			\Default Work Unit\Units\Knight\Hit	
 	1464619614	Dice_roll			\Default Work Unit\Dice\Dice_roll	
 	1584507803	Click			\Default Work Unit\UI\Click	
+	2932280089	Die_01			\Default Work Unit\Units\Mage\Die_01	
+	2932280090	Die_02			\Default Work Unit\Units\Archer\Die_02	
+	3205006517	Hit_02			\Default Work Unit\Units\Archer\Hit_02	
+	3205006518	Hit_01			\Default Work Unit\Units\Mage\Hit_01	
 	3725903807	music_start			\Default Work Unit\Music\music_start	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	150608483	click	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Mac\SFX\click_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\click		3978
 	253982336	Hit	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Mac\SFX\Metal hit_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Units\Knight\Hit		7052
+	282863686	HitM	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Mac\SFX\Ouch_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Units\Mage\HitM		6399
 	340920121	Dice_ Roll	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Mac\SFX\FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_BE01294F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_Sequence\Dice_ Roll		2259
 	672918623	Dice_ Roll_02	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Mac\SFX\FOLYProp_Dice Shake in Hand_PSE_OS_FvpbS_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dice\Dice_Sequence\Dice_ Roll_02		13609
+	803570850	DieM	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Mac\SFX\Magic_Dying_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Units\Mage\DieM		32475
 	953009990	Die	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Mac\SFX\Dead_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Units\Knight\Die		36134
 	1046005575	AMB	Y:\Repos\GMTKJam2022\Project\Project_WwiseProject\.cache\Mac\SFX\AMB_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Level Music\Container\Level\AMB		3677815
 

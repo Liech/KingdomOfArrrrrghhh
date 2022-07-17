@@ -33,7 +33,103 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Units" ID="{C93C2887-CE7B-49F8-AF8C-DCFCCB0C8ABB}" ShortID="852045943"/>
+				<Folder Name="Units" ID="{C93C2887-CE7B-49F8-AF8C-DCFCCB0C8ABB}" ShortID="852045943">
+					<ChildrenList>
+						<Folder Name="Knight" ID="{9F756F4F-C7DE-4A1B-AE36-AB406E0216BB}" ShortID="1073655801">
+							<ChildrenList>
+								<Event Name="Hit" ID="{599F4EDD-95E6-4AE0-BE9E-4AE05D62BD36}">
+									<ChildrenList>
+										<Action Name="" ID="{C862B586-4627-4FE4-B5A8-D50E0B535F76}" ShortID="197314465">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hit" ID="{941F15F9-820A-4936-BE4F-72FC6849D65F}" WorkUnitID="{A9337369-B3F7-4367-919A-6094D8D099C5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Die" ID="{34F224DF-0A1D-4DE8-BD2F-74A30A3E87CE}">
+									<ChildrenList>
+										<Action Name="" ID="{6BF9756E-67BA-4BFB-AA79-33886DAC83B6}" ShortID="861699863">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Die" ID="{0CA67FDD-38DC-423B-8F21-B5784AF39C8F}" WorkUnitID="{A9337369-B3F7-4367-919A-6094D8D099C5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Mage" ID="{3E9E9640-3A1C-4002-B1A1-175A5A18CA21}" ShortID="896548627">
+							<ChildrenList>
+								<Event Name="Hit_01" ID="{089F17FB-ECC3-468C-AB01-0802CCA4EB8E}">
+									<ChildrenList>
+										<Action Name="" ID="{561E79EB-3446-424F-B2A3-507895F6E323}" ShortID="715953782">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="HitM" ID="{3D32474C-3B6A-4485-8A62-E70A9FCA0D0D}" WorkUnitID="{A9337369-B3F7-4367-919A-6094D8D099C5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Die_01" ID="{033E5D3A-73E0-45A3-845B-42716E72C5B4}">
+									<ChildrenList>
+										<Action Name="" ID="{458E28AD-829C-49F5-8E67-0B672A1C5DF0}" ShortID="783510234">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DieM" ID="{46F1F34B-B44E-47A4-8C64-27AC66F40C5D}" WorkUnitID="{A9337369-B3F7-4367-919A-6094D8D099C5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Archer" ID="{44F67414-FE92-4B62-B4DF-E2ABD2B81E31}" ShortID="508257748">
+							<ChildrenList>
+								<Event Name="Hit_02" ID="{01C7409A-20ED-4DD6-A5C4-E292B87FC5CF}">
+									<ChildrenList>
+										<Action Name="" ID="{4318F32A-31FF-4447-92A2-0F5184885754}" ShortID="272458303">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hit" ID="{941F15F9-820A-4936-BE4F-72FC6849D65F}" WorkUnitID="{A9337369-B3F7-4367-919A-6094D8D099C5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Die_02" ID="{843647F0-AAAF-415F-9773-9975A50F12B7}">
+									<ChildrenList>
+										<Action Name="" ID="{A2989922-6035-4513-AB52-B0E7ABE713AF}" ShortID="409734269">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Die" ID="{0CA67FDD-38DC-423B-8F21-B5784AF39C8F}" WorkUnitID="{A9337369-B3F7-4367-919A-6094D8D099C5}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{99BAF856-B094-43DA-A692-BCBFB24E4C96}" ShortID="622120902">
+					<ChildrenList>
+						<Event Name="Click" ID="{4A0AFC6F-BB98-41D9-905F-8E710E94CAF8}">
+							<ChildrenList>
+								<Action Name="" ID="{1E468A60-2A5F-4CD0-82C1-2EA2CE2BA74A}" ShortID="893325494">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="click" ID="{4C0146CA-A33B-44EE-8E5F-F6A2B6AE8EDE}" WorkUnitID="{A9337369-B3F7-4367-919A-6094D8D099C5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

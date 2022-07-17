@@ -3,10 +3,17 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{A485A21E-D0E8-4861-A467-EF43A16FD7E6}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Audio\Board Dice\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Audio\Hit\"/>
+				<Property Name="Event Action List\{01C7409A-20ED-4DD6-A5C4-E292B87FC5CF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{033E5D3A-73E0-45A3-845B-42716E72C5B4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{06536F4C-F089-4AC6-9E60-31F62BCA0558}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{089F17FB-ECC3-468C-AB01-0802CCA4EB8E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{34F224DF-0A1D-4DE8-BD2F-74A30A3E87CE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{47C3568C-8229-4826-BE8B-E99A2DB88858}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4A0AFC6F-BB98-41D9-905F-8E710E94CAF8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{599F4EDD-95E6-4AE0-BE9E-4AE05D62BD36}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{83CE0854-62F3-43A8-846D-C02B052F5D25}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{843647F0-AAAF-415F-9773-9975A50F12B7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A1A491CF-595E-4892-9792-E8BB315323A6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{FA83F492-07B6-4B90-ACB3-FD0FAF1DA43B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
