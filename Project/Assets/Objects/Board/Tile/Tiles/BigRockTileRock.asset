@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55f747e8af38fbe4d8819f37be6fd5aa, type: 3}
-  m_Name: ObstacleTile
+  m_Name: BigRockTileRock
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: 0}
-  m_DefaultGameObject: {fileID: 4893954791951467275, guid: 3144de3abce686149b82a16fc54b2234,
+  m_DefaultGameObject: {fileID: 4893954791951467275, guid: d7398d02b32fd5c4d8bbbb9680cc4e25,
     type: 3}
   m_DefaultColliderType: 1
   m_TilingRules: []

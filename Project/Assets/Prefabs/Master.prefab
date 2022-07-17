@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FactionID: 0
-  Color: {r: 1, g: 0.8044406, b: 0, a: 1}
+  Color: {r: 0.07210493, g: 0, b: 1, a: 1}
 --- !u!114 &1058192902903142853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3e89ad5c1310e42b16587b57cf5bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: Victory
   initiativeOrder: []
   currentState: 0
   currentUnit: {fileID: 0}
@@ -201,6 +202,7 @@ MonoBehaviour:
   CurrentUnitIndicatior: {fileID: 3448927095232958999}
   attackIndicatorObject: {fileID: 3244930267356635206, guid: 9bc450cf8f47b7a4999f86d2363c4262,
     type: 3}
+  startUnit: {fileID: 0}
 --- !u!114 &100326652388380783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +227,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a024ecfc707d66479669a09e1404991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  diceResult: 6
+  sightDistance: 20
+  factionID: 1
 --- !u!1001 &204141967710368337
 PrefabInstance:
   m_ObjectHideFlags: 0

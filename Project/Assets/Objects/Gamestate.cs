@@ -46,7 +46,7 @@ public class Gamestate : MonoBehaviour
         }
 
         if (CurrentUnitIndicatior)
-          CurrentUnitIndicatior.transform.position = currentUnit.transform.position + new Vector3(0, +3, 0);
+          CurrentUnitIndicatior.transform.position = currentUnit.transform.position + new Vector3(0, +2.4f, 0);
 
         if (currentState == GamestateEnum.UnitAttack && attackingUnit) {
             var selected = SelectedUnit.instance.getSelectedUnit();
