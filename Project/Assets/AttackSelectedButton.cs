@@ -12,6 +12,7 @@ public class AttackSelectedButton : MonoBehaviour
     }
 
     public void attackSelectedPress() {
+        Gamestate.instance.playClickMenuItem();
         Gamestate.instance.attackUnit(SelectedUnit.instance.currentUnit);
     }
 }

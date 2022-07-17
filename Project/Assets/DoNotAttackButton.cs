@@ -9,6 +9,7 @@ public class DoNotAttackButton : MonoBehaviour
         instance = this;
     }
     public void doNotAttack() {
+        Gamestate.instance.playClickMenuItem();
         Gamestate.instance.attackUnit(null);
     }
 }

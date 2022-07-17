@@ -14,6 +14,9 @@ public class UnitInformation : MonoBehaviour
 
     public GameObject onDeathEffect;
 
+    [Header("Audio")]
+    public AK.Wwise.Event DeathSound;
+
     bool onDestruction = false;
 
     public void Start() {
@@ -42,6 +45,7 @@ public class UnitInformation : MonoBehaviour
         }
         if (onDeathEffect)
             onDeathEffect.SetActive(true);
+        DeathSound.Post(gameObject);
         yield return new WaitForSeconds(2f);
         Destroy(gameObject);
     }
