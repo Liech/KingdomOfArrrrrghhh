@@ -512,7 +512,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: "Soy un estudiante de intercambio espa\xF1ol. Este es mi primer viaje."
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -800,7 +800,8 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: Sometimes there comes the time in the time of a time to end. This is
+        your fate now.
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -1158,7 +1159,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: We are only the first wave. Be sure to give up early!
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -2387,7 +2388,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: Warum reden die alle hier so komisch?
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
