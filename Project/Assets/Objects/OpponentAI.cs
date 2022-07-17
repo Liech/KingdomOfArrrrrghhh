@@ -17,7 +17,7 @@ public class OpponentAI : MonoBehaviour {
         if (aiTurn) {
             if (Gamestate.instance.currentState == GamestateEnum.DiceRoll && !actionActive) {
                 actionActive = true;
-                StartCoroutine(destructionAnimation());
+                StartCoroutine(diceRolling());
             }
             else if (Gamestate.instance.currentState == GamestateEnum.UnitAttack && !actionActive) {
                 actionActive = true;
@@ -124,9 +124,9 @@ public class OpponentAI : MonoBehaviour {
         actionActive = false;
     }
 
-    IEnumerator destructionAnimation() {
+    IEnumerator diceRolling() {
         yield return new WaitForSeconds(1f); //thinking
-        Gamestate.instance.diceRoll(diceResult);
+        Gamestate.instance.diceRoll(Random.Range(3,7));
         actionActive = false;
     }
 }

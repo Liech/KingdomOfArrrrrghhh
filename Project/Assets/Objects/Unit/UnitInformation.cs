@@ -48,7 +48,7 @@ public class UnitInformation : MonoBehaviour
     }
 
     public void OnDestroy() {
-        Gamestate.instance.removeUnit(this);
+if(Gamestate.instance)        Gamestate.instance.removeUnit(this);
     }
     IEnumerator destructionAnimation() {
         if (GetComponent<Rigidbody>()) {
@@ -69,7 +69,7 @@ public class UnitInformation : MonoBehaviour
     }
     IEnumerator unblockRot() {
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.5f);
         GetComponent<Rigidbody>().freezeRotation = false;
     }
 

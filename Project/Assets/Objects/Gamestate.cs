@@ -198,13 +198,13 @@ public class Gamestate : MonoBehaviour
 
     IEnumerator switchToNextScene() {
         yield return new WaitForSeconds(3f); //thinking
-        instance = null;
+        
         SceneManager.LoadScene(nextScene);
         LoadScene.currentScene = nextScene;
     }
     IEnumerator switchToLost() {
         yield return new WaitForSeconds(3f); //thinking
-        instance = null;
+        
         SceneManager.LoadScene("Lost");
     }
 }

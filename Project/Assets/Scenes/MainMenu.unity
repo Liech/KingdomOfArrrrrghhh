@@ -1292,7 +1292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8fec584643bb54d960249c42e5306a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: MainScene
+  SceneName: Level1
   ClickMenuItem:
     idInternal: 0
     valueGuidInternal: 
