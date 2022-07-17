@@ -808,11 +808,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 133448846021400845, guid: 72f8f5eec1efc7a459044be0d93c3e5e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -907382236, guid: b5668ac2d8c227f49b6092a2f83603d7,
+        type: 3}
     - target: {fileID: 755695916575028874, guid: 72f8f5eec1efc7a459044be0d93c3e5e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.55530167
       objectReference: {fileID: 0}
+    - target: {fileID: 991169726235058600, guid: 72f8f5eec1efc7a459044be0d93c3e5e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -907382236, guid: b5668ac2d8c227f49b6092a2f83603d7,
+        type: 3}
+    - target: {fileID: 1101596467102673589, guid: 72f8f5eec1efc7a459044be0d93c3e5e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -907382236, guid: b5668ac2d8c227f49b6092a2f83603d7,
+        type: 3}
     - target: {fileID: 2199231644420339860, guid: 72f8f5eec1efc7a459044be0d93c3e5e,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -953,6 +971,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2937091299992901505, guid: 72f8f5eec1efc7a459044be0d93c3e5e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -907382236, guid: b5668ac2d8c227f49b6092a2f83603d7,
+        type: 3}
     - target: {fileID: 2937091300577973506, guid: 72f8f5eec1efc7a459044be0d93c3e5e,
         type: 3}
       propertyPath: m_text
@@ -988,6 +1012,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.3408966
       objectReference: {fileID: 0}
+    - target: {fileID: 6584240255518628544, guid: 72f8f5eec1efc7a459044be0d93c3e5e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -907382236, guid: b5668ac2d8c227f49b6092a2f83603d7,
+        type: 3}
     - target: {fileID: 7865154717358391879, guid: 72f8f5eec1efc7a459044be0d93c3e5e,
         type: 3}
       propertyPath: m_AnchorMax.y

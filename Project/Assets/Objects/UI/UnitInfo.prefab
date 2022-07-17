@@ -75,7 +75,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -907382236, guid: b5668ac2d8c227f49b6092a2f83603d7, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -411,7 +411,6 @@ MonoBehaviour:
   life: {fileID: 2651495489568260977}
   portrait: {fileID: 2167555866659166424}
   range: {fileID: 124416520824005946}
-  attackAmount: {fileID: 0}
 --- !u!1 &2167555866659166424
 GameObject:
   m_ObjectHideFlags: 0
