@@ -6,6 +6,7 @@ using UnityEngine;
 public class InitiativeBoard : MonoBehaviour
 {
     public GameObject uiElement;
+    List<UnitInformation> currentOrder = null;
     void Start() {
         StartCoroutine(showInitiative());
     }
@@ -38,18 +39,36 @@ public class InitiativeBoard : MonoBehaviour
             int index = (order.IndexOf(Gamestate.instance.currentUnit) + i) % order.Count;
             shownOrder.Add(order[index]);
         }
-        foreach (Transform child in transform) {
-            GameObject.Destroy(child.gameObject);
+
+        bool same = true;
+
+        if (currentOrder == null)
+            same = false;
+        else if (shownOrder.Count != currentOrder.Count)
+            same = false;
+        else {
+            for(int i = 0;i < shownOrder.Count; i++) {
+                if (shownOrder[i] != currentOrder[i])
+                    same = false;
+            }
         }
-        int count = 0;
-        foreach (var o in shownOrder) {
-            var obj = Instantiate(uiElement, transform);
-            obj.GetComponent<InitiativeOrderElement>().image.sprite = o.portrait;
-            obj.GetComponent<InitiativeOrderElement>().target = o.gameObject;
-            obj.GetComponent<InitiativeOrderElement>().name.GetComponent<TMPro.TextMeshProUGUI>().text = o.name;
-            count++;
-            if (count > 5)
-                return;
+        
+
+        if (!same) {
+            currentOrder = shownOrder;
+            foreach (Transform child in transform) {
+                GameObject.Destroy(child.gameObject);
+            }
+            int count = 0;
+            foreach (var o in shownOrder) {
+                var obj = Instantiate(uiElement, transform);
+                obj.GetComponent<InitiativeOrderElement>().image.sprite = o.portrait;
+                obj.GetComponent<InitiativeOrderElement>().target = o.gameObject;
+                obj.GetComponent<InitiativeOrderElement>().name.GetComponent<TMPro.TextMeshProUGUI>().text = o.name;
+                count++;
+                if (count > 5)
+                    return;
+            }
         }
     }
 }
