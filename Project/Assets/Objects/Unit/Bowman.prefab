@@ -183,12 +183,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52657e7d6dadccf49ab6cb497405fd2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TravelDistance: 3
+  TravelDistance: 2
   Description: Loyal Servant. Serving really loyal!
   Initiative: 1
-  maxLife: 4
-  attackRange: 1
-  currentLife: 4
+  maxLife: 3
+  attackRange: 3
+  currentLife: 3
   portrait: {fileID: 21300000, guid: c47ee01e02cabaa46a618575886ad0e7, type: 3}
   onDeathEffect: {fileID: 6796063379072153302}
 --- !u!1 &289187937888963570

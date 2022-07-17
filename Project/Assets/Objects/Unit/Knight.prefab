@@ -188,10 +188,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TravelDistance: 3
   Description: Loyal Servant. Serving really loyal!
-  Initiative: 1
-  maxLife: 4
+  Initiative: 2
+  maxLife: 9
   attackRange: 1
-  currentLife: 4
+  currentLife: 9
   portrait: {fileID: 21300000, guid: 9f5c809001f3c1b4799e15922b1e9cf6, type: 3}
   onDeathEffect: {fileID: 6796063379072153302}
 --- !u!1 &532377457890282742

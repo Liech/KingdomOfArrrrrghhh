@@ -21,7 +21,7 @@ public class HintLog : MonoBehaviour
 
         if (Gamestate.instance.currentState == GamestateEnum.UnitMovement) {
             if (yourTurn) {
-                Log("Your Turn. Select one of your Units and Move");
+                Log("Your Turn. Select the marked Unit and move it.");
             }
             else
                 Log("The opponents turn");
