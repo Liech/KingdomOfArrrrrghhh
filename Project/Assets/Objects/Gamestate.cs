@@ -123,6 +123,8 @@ public class Gamestate : MonoBehaviour
         if (attackedUnit) {
             attackedUnit.currentLife -= number;
         }
+        if (DiceResultShower.instance) 
+            DiceResultShower.instance.showNumber(number);
         currentState = GamestateEnum.UnitMovement;
         SelectedUnit.instance.setSelectedUnit(null);
         setNextUnitToCurrent();
