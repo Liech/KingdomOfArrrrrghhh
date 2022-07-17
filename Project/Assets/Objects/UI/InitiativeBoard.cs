@@ -37,6 +37,8 @@ public class InitiativeBoard : MonoBehaviour
         List<UnitInformation> shownOrder = new List<UnitInformation>();
         for(int i = 0;i < order.Count; i++) {
             int index = (order.IndexOf(Gamestate.instance.currentUnit) + i) % order.Count;
+            if (index < 0 || index >= order.Count)
+                index = 0;
             shownOrder.Add(order[index]);
         }
 
