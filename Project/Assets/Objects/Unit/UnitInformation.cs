@@ -13,6 +13,8 @@ public class UnitInformation : MonoBehaviour
     public int numberOfAttacks = 1;
     public Sprite portrait;
 
+    public bool isDead = false;
+
     bool inDeath = false;
     public GameObject onDeathEffect;
     public GameObject gotDamage;
@@ -35,6 +37,7 @@ public class UnitInformation : MonoBehaviour
     public void Update() {
         if (currentLife <= 0 && !onDestruction) {
             onDestruction = true;
+            isDead = true;
             StartCoroutine(destructionAnimation());
         }
         if (damageRedTintingTarget) {

@@ -165,6 +165,15 @@ public class Gamestate : MonoBehaviour
         initiativeOrder.OrderBy(x => x.Initiative);
         int nextIndex = (initiativeOrder.IndexOf(currentUnit) + 1) % initiativeOrder.Count;
         currentUnit = initiativeOrder[nextIndex];
+        if (currentUnit.isDead) {
+            bool atleastonealive = false;
+            foreach (var x in initiativeOrder)
+                if (!x.isDead)
+                    atleastonealive = true;
+            if (!atleastonealive)
+                return;
+            setNextUnitToCurrent();
+        }
     }
 
     public void addUnit(UnitInformation info) {
