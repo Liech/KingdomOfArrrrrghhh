@@ -215,7 +215,145 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Units" ID="{AA01C30B-7680-4447-AAA7-984EE5338C14}" ShortID="360641986"/>
+				<Folder Name="Units" ID="{AA01C30B-7680-4447-AAA7-984EE5338C14}" ShortID="360641986">
+					<ChildrenList>
+						<Folder Name="Knight" ID="{D7C9C3BF-2AB6-4508-9646-5BC466D79E8F}" ShortID="45085461">
+							<ChildrenList>
+								<Sound Name="Hit" ID="{941F15F9-820A-4936-BE4F-72FC6849D65F}" ShortID="527831716">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A55BEFD7-049E-4BF3-8778-F4657D738735}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{47AC3D9D-FA62-4063-BF28-AE2202C5A974}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Metal hit" ID="{7BEA9662-C66B-4E3D-B11F-180E9D44DBD5}">
+											<Language>SFX</Language>
+											<AudioFile>Metal hit.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="253982336"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Metal hit" ID="{7BEA9662-C66B-4E3D-B11F-180E9D44DBD5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Die" ID="{0CA67FDD-38DC-423B-8F21-B5784AF39C8F}" ShortID="905237440">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A55BEFD7-049E-4BF3-8778-F4657D738735}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{47AC3D9D-FA62-4063-BF28-AE2202C5A974}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dead" ID="{80CDA657-799E-496B-9BE9-F82060F86F2F}">
+											<Language>SFX</Language>
+											<AudioFile>Dead.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="953009990"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Dead" ID="{80CDA657-799E-496B-9BE9-F82060F86F2F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Archer" ID="{1957D4AD-002F-4F70-80E5-D72F84A69DCE}" ShortID="681534804"/>
+						<Folder Name="Mage" ID="{BF9F154B-DE30-45BE-9CD3-522FD2D89D6E}" ShortID="701430351">
+							<ChildrenList>
+								<Sound Name="DieM" ID="{46F1F34B-B44E-47A4-8C64-27AC66F40C5D}" ShortID="737766223">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A55BEFD7-049E-4BF3-8778-F4657D738735}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{47AC3D9D-FA62-4063-BF28-AE2202C5A974}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Magic_Dying" ID="{B91A3454-E67A-4B3A-94AA-4E7E75BA3D89}">
+											<Language>SFX</Language>
+											<AudioFile>Magic_Dying.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="803570850"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Magic_Dying" ID="{B91A3454-E67A-4B3A-94AA-4E7E75BA3D89}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="HitM" ID="{3D32474C-3B6A-4485-8A62-E70A9FCA0D0D}" ShortID="568795369">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A55BEFD7-049E-4BF3-8778-F4657D738735}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{47AC3D9D-FA62-4063-BF28-AE2202C5A974}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ouch" ID="{E760C456-CB10-45C7-BE3D-ADDEADC5BE41}">
+											<Language>SFX</Language>
+											<AudioFile>Ouch.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="282863686"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Ouch" ID="{E760C456-CB10-45C7-BE3D-ADDEADC5BE41}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{C5898B4B-5413-4DC0-8F1A-7F95898D52B2}" ShortID="813170916">
+					<ChildrenList>
+						<Sound Name="click" ID="{4C0146CA-A33B-44EE-8E5F-F6A2B6AE8EDE}" ShortID="67266816">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A55BEFD7-049E-4BF3-8778-F4657D738735}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{47AC3D9D-FA62-4063-BF28-AE2202C5A974}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="click" ID="{9C0F1C92-56A9-471C-8978-FDAD33C1EE9B}">
+									<Language>SFX</Language>
+									<AudioFile>click.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="150608483"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="click" ID="{9C0F1C92-56A9-471C-8978-FDAD33C1EE9B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

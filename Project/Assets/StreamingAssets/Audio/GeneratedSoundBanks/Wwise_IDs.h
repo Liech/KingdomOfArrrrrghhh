@@ -16,7 +16,11 @@ namespace AK
         static const AkUniqueID CLICK = 1584507803U;
         static const AkUniqueID DICE_ROLL = 1464619614U;
         static const AkUniqueID DIE = 445985469U;
+        static const AkUniqueID DIE_01 = 2932280089U;
+        static const AkUniqueID DIE_02 = 2932280090U;
         static const AkUniqueID HIT = 1116398592U;
+        static const AkUniqueID HIT_01 = 3205006518U;
+        static const AkUniqueID HIT_02 = 3205006517U;
         static const AkUniqueID MUSIC_START = 3725903807U;
     } // namespace EVENTS
 
