@@ -34,6 +34,7 @@ public class DiceGrabbing : MonoBehaviour
             return;
         zCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         offset = gameObject.transform.position - getMouseAsWorldPoint();
+        transform.rotation = Quaternion.Euler(Random.Range(0.0f, 360.0f), Random.Range(0.0f, 360.0f), Random.Range(0.0f, 360.0f));
         currentlyGrabbing = true;
     }
 

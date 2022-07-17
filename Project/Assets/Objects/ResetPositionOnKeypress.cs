@@ -16,7 +16,7 @@ public class ResetPositionOnKeypress : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(triggerKey) && Gamestate.instance.currentState == GamestateEnum.DiceRoll) {
+        if (Input.GetKeyDown(triggerKey) && Gamestate.instance.currentState == GamestateEnum.DiceRoll || transform.position.y < position.y-10) {
             transform.position = position;
             if (transform.GetComponent<Rigidbody>()) {
                 var a = transform.GetComponent<Rigidbody>();

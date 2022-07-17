@@ -22,14 +22,17 @@ public class Gamestate : MonoBehaviour
     public GameObject CurrentUnitIndicatior = null;
     public GameObject attackIndicatorObject;
 
+    public UnitInformation startUnit;
+
     private List<AttackHere> attackIndicators = new List<AttackHere>();
     private void Awake() {
         instance = this;
     }
 
     
-    void Start()
-    {
+    void Start() {
+        instance = this;
+        currentUnit = startUnit;
     }
 
     void Update()
@@ -87,6 +90,8 @@ public class Gamestate : MonoBehaviour
                     DoNotAttackButton.instance.transform.GetChild(0).gameObject.SetActive(true);
                     attackable.Clear();
                     foreach (var unit in units) {
+                        if (unit.GetComponent<FactionMember>().FactionID == currentUnit.GetComponent<FactionMember>().FactionID)
+                            continue;
                         var indicator = Instantiate(attackIndicatorObject, unit.gameObject.transform);
                         indicator.transform.localPosition = new Vector3(0, 3, 0);
                         indicator.GetComponent<AttackHere>().target = unit;
@@ -175,11 +180,13 @@ public class Gamestate : MonoBehaviour
 
     IEnumerator switchToNextScene() {
         yield return new WaitForSeconds(3f); //thinking
+        instance = null;
         SceneManager.LoadScene(nextScene);
         LoadScene.currentScene = nextScene;
     }
     IEnumerator switchToLost() {
         yield return new WaitForSeconds(3f); //thinking
+        instance = null;
         SceneManager.LoadScene("Lost");
     }
 }
