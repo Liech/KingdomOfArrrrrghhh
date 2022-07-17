@@ -13,6 +13,7 @@ public class UnitInformation : MonoBehaviour
     public int numberOfAttacks = 1;
     public Sprite portrait;
 
+    bool inDeath = false;
     public GameObject onDeathEffect;
     public GameObject gotDamage;
     public SkinnedMeshRenderer damageRedTintingTarget;
@@ -51,15 +52,18 @@ public class UnitInformation : MonoBehaviour
 if(Gamestate.instance)        Gamestate.instance.removeUnit(this);
     }
     IEnumerator destructionAnimation() {
-        if (GetComponent<Rigidbody>()) {
-            GetComponent<Rigidbody>().useGravity = false;
-            GetComponent<Rigidbody>().velocity = new Vector3(0, 2, 0);
+        if (!inDeath) {
+            inDeath = true;
+            if (GetComponent<Rigidbody>()) {
+                GetComponent<Rigidbody>().useGravity = false;
+                GetComponent<Rigidbody>().velocity = new Vector3(0, 2, 0);
+            }
+            if (onDeathEffect)
+                onDeathEffect.SetActive(true);
+            DeathSound.Post(gameObject);
+            yield return new WaitForSeconds(2f);
+            Destroy(gameObject);
         }
-        if (onDeathEffect)
-            onDeathEffect.SetActive(true);
-        DeathSound.Post(gameObject);
-        yield return new WaitForSeconds(2f);
-        Destroy(gameObject);
     }
 
     public void blockRotation() {
