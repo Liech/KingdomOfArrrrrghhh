@@ -269,7 +269,14 @@ MonoBehaviour:
 
     Nicolas Harttig - Developer
 
-'
+
+    Entry
+    of the GMTK 2022 Game Jam
+
+    People Models from https://sketchfab.com/Inuciian
+
+    Using
+    of Wwise for Sounds'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1148,7 +1155,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5980cd929e9014245851c3aebff39f23, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f188873d27533b44388f02147eff7c82, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

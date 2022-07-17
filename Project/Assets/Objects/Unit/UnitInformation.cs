@@ -81,7 +81,7 @@ if(Gamestate.instance)        Gamestate.instance.removeUnit(this);
     IEnumerator showDamage() {
         while (true) {
             yield return new WaitForSeconds(0.1f);
-            if (damageCounterLife > currentLife && gotDamage) {
+            if (damageCounterLife > currentLife && gotDamage && currentLife > 0) {
                 DamageSound.Post(gameObject);
                 gotDamage.SetActive(true);
                 yield return new WaitForSeconds(0.1f);
