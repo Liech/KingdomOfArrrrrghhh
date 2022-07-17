@@ -3143,9 +3143,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3700200376378227078, guid: f678e93ca7c7a4444aa3e5a89be1c22b,
         type: 3}
+      propertyPath: hoverTile
+      value: 
+      objectReference: {fileID: 11400000, guid: abd03be7a5c7be040b72140cb60a773f,
+        type: 2}
+    - target: {fileID: 3700200376378227078, guid: f678e93ca7c7a4444aa3e5a89be1c22b,
+        type: 3}
       propertyPath: rangeTile
       value: 
-      objectReference: {fileID: 11400000, guid: 7e1d1688a955c164f8c6cdbd2ca2fd28,
+      objectReference: {fileID: 11400000, guid: ad299b8e1ed09874c9ede57a91844a12,
+        type: 2}
+    - target: {fileID: 3700200376378227078, guid: f678e93ca7c7a4444aa3e5a89be1c22b,
+        type: 3}
+      propertyPath: notMyRangeTile
+      value: 
+      objectReference: {fileID: 11400000, guid: 8dbb80ede450bf147b99c535f3ab9a0c,
         type: 2}
     - target: {fileID: 3996243336974442347, guid: f678e93ca7c7a4444aa3e5a89be1c22b,
         type: 3}

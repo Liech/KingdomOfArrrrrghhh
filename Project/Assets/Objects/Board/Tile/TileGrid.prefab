@@ -1033,15 +1033,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assetTiles: {fileID: 88029235300431648}
-  highlightTile: {fileID: 11400000, guid: b083997253a7757439b04503c770ef82, type: 2}
+  highlightTile: {fileID: 11400000, guid: bdf0e0493919d2f47900e597dcabe55a, type: 2}
   highlightTilemap: {fileID: 9132614613444467456}
   RangeIndicatorTilemap: {fileID: 8636578441924948829}
-  rangeTile: {fileID: 11400000, guid: 7e1d1688a955c164f8c6cdbd2ca2fd28, type: 2}
+  rangeTile: {fileID: 11400000, guid: ad299b8e1ed09874c9ede57a91844a12, type: 2}
   notMyRangeTile: {fileID: 11400000, guid: 445b1fe84a6a2ee41bc0fbbfbd9d5cf0, type: 2}
   OwnershipTilemap: {fileID: 6666248444256045390}
-  ownerTile: {fileID: 11400000, guid: f1cf21ab4340a6c409b2e08173dae2d6, type: 2}
+  ownerTile: {fileID: 11400000, guid: bdf0e0493919d2f47900e597dcabe55a, type: 2}
   HoverTilemap: {fileID: 3996243336974442347}
-  hoverTile: {fileID: 11400000, guid: 2af8f2abce10fd54bbaa0d6d848a653e, type: 2}
+  hoverTile: {fileID: 11400000, guid: abd03be7a5c7be040b72140cb60a773f, type: 2}
 --- !u!1 &1172939409010188748
 GameObject:
   m_ObjectHideFlags: 0
