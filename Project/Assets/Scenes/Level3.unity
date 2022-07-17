@@ -221,7 +221,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: You are camping on our beloved future land. Im the victim here!
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -316,7 +316,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: e44986a9406b706468108c2940f861b2,
         type: 3}
       propertyPath: Description
-      value: They are too many. We can't win!
+      value: Alea Iacta Est
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44986a9406b706468108c2940f861b2, type: 3}
@@ -453,7 +453,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: e44986a9406b706468108c2940f861b2,
         type: 3}
       propertyPath: Description
-      value: They are too many. We can't win!
+      value: The trees do not look very battleproof
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44986a9406b706468108c2940f861b2, type: 3}
@@ -537,7 +537,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: e44986a9406b706468108c2940f861b2,
         type: 3}
       propertyPath: Description
-      value: They are too many. We can't win!
+      value: Maybe its not that bad in your Kingdom. You must have better names though.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44986a9406b706468108c2940f861b2, type: 3}
@@ -690,7 +690,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: e44986a9406b706468108c2940f861b2,
         type: 3}
       propertyPath: Description
-      value: They are too many. We can't win!
+      value: Propably we could give up and escape into the mountain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44986a9406b706468108c2940f861b2, type: 3}
@@ -827,7 +827,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: e44986a9406b706468108c2940f861b2,
         type: 3}
       propertyPath: Description
-      value: They are too many. We can't win!
+      value: The big one still only counts as one!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44986a9406b706468108c2940f861b2, type: 3}
@@ -912,7 +912,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: e44986a9406b706468108c2940f861b2,
         type: 3}
       propertyPath: Description
-      value: They are too many. We can't win!
+      value: Hey invaders. Take my arrow!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44986a9406b706468108c2940f861b2, type: 3}
@@ -1020,7 +1020,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: This is it.
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -1308,7 +1308,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: You should have taken the blue pill
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -1403,7 +1403,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: One Arrow is more worth than your army.
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -1498,7 +1498,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: Why should we even bother to overrule such small kingdom
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -1593,7 +1593,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: We must protect our beloved Kingdom. Even if it is our death
+      value: Come at me Brother. In Battle we stand.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcc2682de34823b4080268fce911817c, type: 3}
@@ -1732,7 +1732,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: We must protect our beloved Kingdom. Even if it is our death
+      value: "This is not your ground. According to \xA74 Section 3 i mark you damned!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcc2682de34823b4080268fce911817c, type: 3}
@@ -1882,6 +1882,12 @@ PrefabInstance:
       propertyPath: FactionID
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8080658758466197194, guid: 5a11456dda4a0434697a8ef9afc08fad,
+        type: 3}
+      propertyPath: Description
+      value: This was prepared for century. But you have only minutes to prepare
+        for your doom
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a11456dda4a0434697a8ef9afc08fad, type: 3}
 --- !u!4 &1281546957 stripped
@@ -1970,7 +1976,8 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: e44986a9406b706468108c2940f861b2,
         type: 3}
       propertyPath: Description
-      value: They are too many. We can't win!
+      value: My prophecy says i will be strucked by an six sided boulder. I don't
+        see one here, so we will win!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44986a9406b706468108c2940f861b2, type: 3}
@@ -2180,7 +2187,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: e44986a9406b706468108c2940f861b2,
         type: 3}
       propertyPath: Description
-      value: They are too many. We can't win!
+      value: Atttaaaaaaaaaaaack!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44986a9406b706468108c2940f861b2, type: 3}
@@ -2264,7 +2271,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: I hope your houses look nice when they are burning
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -2359,7 +2366,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: I loooooove pillaging
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
@@ -2503,6 +2510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080658758466197194, guid: 5a11456dda4a0434697a8ef9afc08fad,
+        type: 3}
+      propertyPath: Description
+      value: By my might. Hold on! It is Hammertime.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a11456dda4a0434697a8ef9afc08fad, type: 3}
@@ -9102,7 +9114,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: We must protect our beloved Kingdom. Even if it is our death
+      value: This is the final Battle. We stand our ground! For Arrrrrghhh!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcc2682de34823b4080268fce911817c, type: 3}
@@ -9510,7 +9522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TravelDistance: 3
-  Description: Why do you even try to resist. Bow before us!
+  Description: This is your end!
   Initiative: 2
   maxLife: 20
   attackRange: 1
@@ -10013,7 +10025,7 @@ PrefabInstance:
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}
       propertyPath: Description
-      value: Why do you even try to resist. Bow before us!
+      value: Even when i fall. I will take many of you with me!
       objectReference: {fileID: 0}
     - target: {fileID: 8080658758466197194, guid: dcc2682de34823b4080268fce911817c,
         type: 3}

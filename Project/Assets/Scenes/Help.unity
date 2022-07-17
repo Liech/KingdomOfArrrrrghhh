@@ -817,12 +817,13 @@ MonoBehaviour:
     A Turn consists of Movement, Attack Declaration and Damage Roll
 
 
-    Please
-    be careful with the dice interfering with things. The Table is big enough.
+    Damage
+    rolls require you to throw the dice. For this use drag and drop on the dice with
+    your mouse.
 
 
-    Camera
-    can be changed while Right clicking activation (Mouse + WASD/QE)
+    Camera perspective can be changed while Right clicking (Mouse
+    + WASD/QE)
 
 '
   m_isRightToLeft: 0
