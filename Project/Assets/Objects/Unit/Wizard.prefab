@@ -129,6 +129,7 @@ MonoBehaviour:
   maxLife: 2
   attackRange: 5
   currentLife: 2
+  numberOfAttacks: 2
   portrait: {fileID: 21300000, guid: d8b9482f67a0a0e4f8beb991e780713b, type: 3}
   onDeathEffect: {fileID: 6796063379072153302}
   gotDamage: {fileID: 4538861015431585964}

@@ -35,7 +35,12 @@ public class HintLog : MonoBehaviour
         }
         if (Gamestate.instance.currentState == GamestateEnum.DiceRoll) {
             if (yourTurn) {
-                Log("Roll the dice!\nDrag and Drop the Dice.");
+                if (Gamestate.instance.maxNumberOfAttacks > 1) {
+                    Log("Roll the dice multiple times (" + ((Gamestate.instance.maxNumberOfAttacks-Gamestate.instance.currentNumberOfAttacks)+1).ToString() + "/"+ Gamestate.instance.maxNumberOfAttacks.ToString() + ")!\nDrag and Drop the Dice.");
+                }
+                else { 
+                    Log("Roll the dice!\nDrag and Drop the Dice.");
+                }
             }
             else
                 Log("Your oppenent Rolls the dice");

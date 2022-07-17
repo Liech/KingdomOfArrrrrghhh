@@ -10,6 +10,7 @@ public class UnitInformation : MonoBehaviour
     public int maxLife = 4;
     public int attackRange = 1;
     public int currentLife = 4;
+    public int numberOfAttacks = 1;
     public Sprite portrait;
 
     public GameObject onDeathEffect;

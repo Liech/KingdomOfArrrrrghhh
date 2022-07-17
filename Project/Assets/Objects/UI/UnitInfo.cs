@@ -11,6 +11,7 @@ public class UnitInfo : MonoBehaviour
     public GameObject name;
     public GameObject life;
     public GameObject portrait;
+    public GameObject range;
 
     // Start is called before the first frame update
     void Awake()
@@ -27,6 +28,10 @@ public class UnitInfo : MonoBehaviour
             description.GetComponent<TextMeshProUGUI>().SetText(unit.Description);
             name.GetComponent<TextMeshProUGUI>().SetText(unit.gameObject.name);
             life.GetComponent<TextMeshProUGUI>().SetText(unit.currentLife.ToString() + "/" + unit.maxLife.ToString());
+            string attackAMountStr = "";
+            if (unit.numberOfAttacks > 1)
+                attackAMountStr = " x" + unit.numberOfAttacks.ToString();
+            range.GetComponent<TextMeshProUGUI>().SetText(unit.attackRange.ToString() + attackAMountStr);
             transform.GetChild(0).gameObject.SetActive(true);
             portrait.GetComponent<UnityEngine.UI.Image>().sprite = unit.portrait;
         }

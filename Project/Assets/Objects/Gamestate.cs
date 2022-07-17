@@ -21,6 +21,8 @@ public class Gamestate : MonoBehaviour
     public HashSet<UnitInformation> attackable = new HashSet<UnitInformation>();
     public GameObject CurrentUnitIndicatior = null;
     public GameObject attackIndicatorObject;
+    public int currentNumberOfAttacks = 1;
+    public int maxNumberOfAttacks = 1;
 
     public UnitInformation startUnit;
 
@@ -125,9 +127,13 @@ public class Gamestate : MonoBehaviour
         }
         if (DiceResultShower.instance) 
             DiceResultShower.instance.showNumber(number);
-        currentState = GamestateEnum.UnitMovement;
-        SelectedUnit.instance.setSelectedUnit(null);
-        setNextUnitToCurrent();
+
+        currentNumberOfAttacks--;
+        if (currentNumberOfAttacks <= 0) {
+            currentState = GamestateEnum.UnitMovement;
+            SelectedUnit.instance.setSelectedUnit(null);
+            setNextUnitToCurrent();
+        }
     }
 
     public void attackUnit(UnitInformation attackedUnit) {
@@ -147,6 +153,8 @@ public class Gamestate : MonoBehaviour
             Destroy(a.gameObject);
         attackIndicators.Clear();
         DoNotAttackButton.instance.transform.GetChild(0).gameObject.SetActive(false);
+        currentNumberOfAttacks = attackingUnit.numberOfAttacks;
+        maxNumberOfAttacks = currentNumberOfAttacks;
     }
 
     public bool currentUnitCanBeMoved() {
