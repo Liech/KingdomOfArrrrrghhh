@@ -16,11 +16,19 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4056684167" Language="SFX" Hash="3033840835">
+		<SoundBank Id="4056684167" Language="SFX" Hash="127241429">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1584507803" Name="Click" ObjectPath="\Events\Default Work Unit\UI\Click" DurationType="OneShot" DurationMin="0.345313" DurationMax="0.345313">
+					<IncludedMemoryFiles>
+						<File Id="150608483" Language="SFX">
+							<ShortName>click.wav</ShortName>
+							<Path>SFX/click_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1464619614" Name="Dice_roll" ObjectPath="\Events\Default Work Unit\Dice\Dice_roll" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.100191" DurationMax="0.213156">
 					<IncludedMemoryFiles>
 						<File Id="340920121" Language="SFX">
@@ -33,35 +41,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="445985469" Name="Die" ObjectPath="\Events\Default Work Unit\Units\Knight\Die" DurationType="OneShot" DurationMin="1.684059" DurationMax="1.684059">
+					<IncludedMemoryFiles>
+						<File Id="953009990" Language="SFX">
+							<ShortName>Dead.wav</ShortName>
+							<Path>SFX/Dead_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1116398592" Name="Hit" ObjectPath="\Events\Default Work Unit\Units\Knight\Hit" DurationType="OneShot" DurationMin="0.511458" DurationMax="0.511458">
+					<IncludedMemoryFiles>
+						<File Id="253982336" Language="SFX">
+							<ShortName>Metal hit.wav</ShortName>
+							<Path>SFX/Metal hit_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3725903807" Name="music_start" ObjectPath="\Events\Default Work Unit\Music\music_start" DurationType="OneShot" DurationMin="241.740005" DurationMax="241.740005">
 					<IncludedMemoryFiles>
 						<File Id="1046005575" Language="SFX">
 							<ShortName>AMB.wav</ShortName>
 							<Path>SFX/AMB_9EDFC787.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3874500464" Name="Unit_Error" ObjectPath="\Events\Default Work Unit\Units\Unit_Error" DurationType="OneShot" DurationMin="0.230729" DurationMax="0.230729">
-					<IncludedMemoryFiles>
-						<File Id="883261010" Language="SFX">
-							<ShortName>Error.wav</ShortName>
-							<Path>SFX/Error_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="670754785" Name="Unit_Move" ObjectPath="\Events\Default Work Unit\Units\Unit_Move" DurationType="OneShot" DurationMin="0.268313" DurationMax="0.268313">
-					<IncludedMemoryFiles>
-						<File Id="594770932" Language="SFX">
-							<ShortName>Move.wav</ShortName>
-							<Path>SFX/Move_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="244160138" Name="Unit_Select" ObjectPath="\Events\Default Work Unit\Units\Unit_Select" DurationType="OneShot" DurationMin="0.164646" DurationMax="0.164646">
-					<IncludedMemoryFiles>
-						<File Id="466394452" Language="SFX">
-							<ShortName>Select.wav</ShortName>
-							<Path>SFX/Select_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
