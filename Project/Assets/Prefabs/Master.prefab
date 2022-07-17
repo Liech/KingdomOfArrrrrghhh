@@ -163,7 +163,7 @@ MonoBehaviour:
   SelectUnit:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b42463a3a038044c789dadf54c846f71,
+    WwiseObjectReference: {fileID: 11400000, guid: 533a85eec90544ebfa724a850063910c,
       type: 2}
 --- !u!114 &1077512351182310556
 MonoBehaviour:
@@ -202,7 +202,14 @@ MonoBehaviour:
   CurrentUnitIndicatior: {fileID: 3448927095232958999}
   attackIndicatorObject: {fileID: 3244930267356635206, guid: 9bc450cf8f47b7a4999f86d2363c4262,
     type: 3}
+  currentNumberOfAttacks: 1
+  maxNumberOfAttacks: 1
   startUnit: {fileID: 0}
+  ClickMenuItem:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 533a85eec90544ebfa724a850063910c,
+      type: 2}
 --- !u!114 &100326652388380783
 MonoBehaviour:
   m_ObjectHideFlags: 0
