@@ -7,8 +7,6 @@ public class SelectedUnit : MonoBehaviour
     public static SelectedUnit instance;
     bool clickThisFrame = false;
     public UnitInformation currentUnit;
-    [Header("Audio")]
-    public AK.Wwise.Event SelectUnit;
     // Start is called before the first frame update
     void Awake()
     {
@@ -28,7 +26,7 @@ public class SelectedUnit : MonoBehaviour
                 UnitInfo.instance.setUnit(unit);
                 Pathfinder.instance.setUnit(unit.gameObject);
                 Pathfinder.instance.showReachable = true;
-                SelectUnit.Post(gameObject);
+                SoundPlayer.instance.playSound("Click");
             }
             else {
                 currentUnit = null;

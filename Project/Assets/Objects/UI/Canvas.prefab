@@ -148,10 +148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: MainMenu
-  ClickMenuItem:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1682354367186386059
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +531,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1544,6 +1541,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 2937091299542602564}
     m_Modifications:
     - target: {fileID: 1641085727199898149, guid: c7ffcc8e6e574704b92add044fc79f20,
@@ -1717,6 +1715,9 @@ PrefabInstance:
       value: InitiativeBoard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7ffcc8e6e574704b92add044fc79f20, type: 3}
 --- !u!224 &7041369292899523177 stripped
 RectTransform:
@@ -1729,8 +1730,14 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 2937091299542602564}
     m_Modifications:
+    - target: {fileID: 116624965353579429, guid: 5139f6a6ca2771a44a2a8bdfcc072b03,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1460162450505732580, guid: 5139f6a6ca2771a44a2a8bdfcc072b03,
         type: 3}
       propertyPath: m_Name
@@ -1842,6 +1849,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5139f6a6ca2771a44a2a8bdfcc072b03, type: 3}
 --- !u!224 &683198210377895116 stripped
 RectTransform:

@@ -20,11 +20,6 @@ public class UnitInformation : MonoBehaviour
     public GameObject gotDamage;
     public SkinnedMeshRenderer damageRedTintingTarget;
 
-    [Header("Audio")]
-    public AK.Wwise.Event DeathSound;
-    public AK.Wwise.Event DamageSound;
-
-
     private int damageCounterLife;
     bool onDestruction = false;
 
@@ -63,7 +58,8 @@ if(Gamestate.instance)        Gamestate.instance.removeUnit(this);
             }
             if (onDeathEffect)
                 onDeathEffect.SetActive(true);
-            DeathSound.Post(gameObject);
+
+            SoundPlayer.instance.playSound("Splatter");
             yield return new WaitForSeconds(2f);
             Destroy(gameObject);
         }
@@ -85,7 +81,7 @@ if(Gamestate.instance)        Gamestate.instance.removeUnit(this);
         while (true) {
             yield return new WaitForSeconds(0.1f);
             if (damageCounterLife > currentLife && gotDamage && currentLife > 0) {
-                DamageSound.Post(gameObject);
+                SoundPlayer.instance.playSound("Sword");
                 gotDamage.SetActive(true);
                 yield return new WaitForSeconds(0.1f);
                 gotDamage.SetActive(false);

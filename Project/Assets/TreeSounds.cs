@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TreeSounds : MonoBehaviour {
-    [Header("Audio")]
-    public AK.Wwise.Event TreeFalls;
 
     bool hasFallen = false;
     // Start is called before the first frame update
@@ -21,7 +19,7 @@ public class TreeSounds : MonoBehaviour {
             if (!hasFallen) {
                 hasFallen = true;
                 Debug.Log("Tree falls");
-                TreeFalls.Post(gameObject);
+                SoundPlayer.instance.playSound("Dice");
             }
         }
 

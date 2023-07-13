@@ -26,9 +26,6 @@ public class Gamestate : MonoBehaviour
 
     public UnitInformation startUnit;
 
-    [Header("Audio")]
-    public AK.Wwise.Event ClickMenuItem;
-
     private List<AttackHere> attackIndicators = new List<AttackHere>();
     private void Awake() {
         instance = this;
@@ -42,7 +39,7 @@ public class Gamestate : MonoBehaviour
 
     public void playClickMenuItem() {
         Debug.Log("ClickMenu");
-        ClickMenuItem.Post(gameObject);
+        SoundPlayer.instance.playSound("Click");
     }
 
     void Update()
